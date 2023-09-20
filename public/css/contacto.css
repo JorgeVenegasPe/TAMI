@@ -1,12 +1,12 @@
 
 /* para colorear cada pagina en la ue esrtammos en la barra de navegador */
 @media screen and (min-width: 830px) {
-  .menu__item:nth-child(4) {
+  .menu__item:nth-child(5) {
     background-color: var(--color-primario1);
     position: relative;
   }
 
-  .menu__item:nth-child(4)::before {
+  .menu__item:nth-child(5)::before {
     content: "";
     display: block;
     height: 2rem;
