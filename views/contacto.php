@@ -27,7 +27,7 @@
         <ul class="footer__sociales1">
           <li class="footer__item1"><a class="footer__link"><i class="far fa-envelope icono10"
                 style="margin-right: .5rem;"></i><span>informestami01@gmail.com</span></a></li>
-          <li class="footer__item1 footer__whas"><a class="footer__link"><i class="fab fa-whatsapp icono10""></i><span>936910425</span></a></li>
+          <li class="footer__item1 footer__whas"><a class="footer__link"><i class="fab fa-whatsapp icono10""></i><span>+51 978 883 199</span></a></li>
           <li class=" footer__item1"><a class="footer__link" href="https://www.facebook.com/tamiperu01"
                   targe="_blank"><i class="fab fa-facebook-f icono10" style="margin-right: 1.3rem;"></i><span>TAMI
                     PERU</span></a></li>

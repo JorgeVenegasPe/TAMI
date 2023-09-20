@@ -1,6 +1,6 @@
 <header class="header">
-    <a class="icono__flotante" href="https://api.whatsapp.com/send?phone=51936910425" target="_blank"><img class="logo__whatsapp" src="../public/images/whatsapp.png" alt=""></a>
-    <figure class="header__logo"><img class="header__img" src="../public/images/logo_sin_fondo.png" alt="logo de la empresa" /></figure>
+    <a class="icono__flotante" href="https://api.whatsapp.com/send?phone=51978883199" target="_blank"><img class="logo__whatsapp" src="../public/images/whatsapp.png" alt=""></a>
+    <figure class="header__logo"><img class="header__img" src="../public/images/TAMI LOGO Fondo Turquesa.png" alt="logo de la empresa" /></figure>
     <div class="header__boton" id="boton">
         <div class="header__hamburguesa"></div>
     </div>
