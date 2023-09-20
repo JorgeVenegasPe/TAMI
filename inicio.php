@@ -26,8 +26,10 @@
               <li class="menu__item"><a class="menu__link" href="inicio.php">Inicio</a></li>
               <li class="menu__item"><a class="menu__link" href="views/nosotros.php">Nosotros</a></li>
               <li class="menu__item"><a class="menu__link" href="views/productos.php">Productos</a></li>
+              <li class="menu__item"><a class="menu__link" href="views/compras.php">Compras</a></li>
               <li class="menu__item"><a class="menu__link" href="views/contacto.php">Contacto</a></li>
               <li class="menu__item"><a class="menu__link" href="views/politica_envio.php">Política de envíos</a></li>
+              
           </ul>
       </nav>
   </header>

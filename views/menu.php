@@ -9,6 +9,7 @@
             <li class="menu__item"><a class="menu__link" href="../index.php">Inicio</a></li>
             <li class="menu__item"><a class="menu__link" href="nosotros.php">Nosotros</a></li>
             <li class="menu__item"><a class="menu__link" href="productos.php">Productos</a></li>
+            <li class="menu__item"><a class="menu__link" href="compras.php">Compras</a></li>
             <li class="menu__item"><a class="menu__link" href="contacto.php">Contacto</a></li>
             <li class="menu__item"><a class="menu__link" href="politica_envio.php">Política de envíos</a></li>
         </ul>
