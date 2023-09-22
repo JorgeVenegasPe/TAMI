@@ -8,17 +8,7 @@ addEventListener("scroll", () => {
     }
 })
 
-let m_laminadora = document.getElementById("maquina__laminadora")
-let laminadora = document.getElementById("laminadora")
-let icono = document.getElementById("icono")
-m_laminadora.addEventListener("click", () => {
-    laminadora.classList.add("display2")
-})
 
-icono.addEventListener("click", () => {
-        laminadora.classList.remove("display2")
-    }
-)
 
 let m_selladora = document.getElementById("maquina__selladora")
 let selladora = document.getElementById("selladora")

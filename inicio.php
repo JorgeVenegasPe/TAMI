@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<link rel="icon" href="public/images/logo_sin_fondo.png" type="image/x-icon">
+<link rel="icon" href="public/images/TAMI LOGO Fondo Turquesa.png" type="image/x-icon">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Inicio | TAMI</title>
 <link rel="preload" href="public/css/menu.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -17,7 +17,7 @@
 <body >
   <header class="header">
       <a class="icono__flotante" href="https://api.whatsapp.com/send?phone=51936910425" target="_blank"><img class="logo__whatsapp" src="public/images/whatsapp.png" alt=""></a>
-      <figure class="header__logo"><img class="header__img" src="public/images/logo_sin_fondo.png" alt="logo de la empresa" /></figure>
+      <figure class="header__logo"><img class="header__img" src="public/images/TAMI LOGO Fondo Turquesa.png" alt="logo de la empresa" /></figure>
       <div class="header__boton" id="boton">
           <div class="header__hamburguesa"></div>
       </div>
@@ -26,8 +26,10 @@
               <li class="menu__item"><a class="menu__link" href="inicio.php">Inicio</a></li>
               <li class="menu__item"><a class="menu__link" href="views/nosotros.php">Nosotros</a></li>
               <li class="menu__item"><a class="menu__link" href="views/productos.php">Productos</a></li>
+              <li class="menu__item"><a class="menu__link" href="views/compras.php">Compras</a></li>
               <li class="menu__item"><a class="menu__link" href="views/contacto.php">Contacto</a></li>
               <li class="menu__item"><a class="menu__link" href="views/politica_envio.php">Política de envíos</a></li>
+              
           </ul>
       </nav>
   </header>

@@ -126,6 +126,8 @@ h2 {
   margin: 1rem;
   width: 70%;
   position: relative;
+  background-color: white; /* Agregar fondo blanco */
+  padding: 15px; 
 }
 
 @media screen and (min-width: 830px) {
@@ -148,12 +150,12 @@ h2 {
 .productos__img {
   height: 97px;
   width: 100%;
-  object-fit: cover;
+  object-fit: fill; /* Hans - Cambio de cover a fill */ 
 }
 
 @media screen and (min-width: 815px) {
   .productos__img {
-    height: 77%;
+    height: 85%;
   }
 }
 
@@ -168,6 +170,7 @@ h2 {
   opacity: 0;
   text-decoration: none;
   transition: opacity .4s;
+  position: relative;
 }
 
 @media screen and (min-width: 830px) {

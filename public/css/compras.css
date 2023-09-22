@@ -1,0 +1,31 @@
+@media screen and (min-width: 830px) {
+    .menu__item:nth-child(4) {
+      background-color: var(--color-primario1);
+      position: relative;
+    }
+  
+    .menu__item:nth-child(4)::before {
+      content: "";
+      display: block;
+      background-color: black;
+      height: 2rem;
+      width: 30%;
+      position: absolute;
+      bottom: -.9rem;
+      transform: translate(70%, -20%) rotate(52deg);
+      z-index: -1;
+      background-color: var(--color-primario1);
+      border: 2px solid gray;
+    }
+  }
+  @media screen and (min-width: 830px) {
+    .main__compras {
+      margin-top: 10rem;
+    }
+  }
+
+  .main__compras{
+    width: 500px;
+    height: 500px;
+    color: black;
+  }
