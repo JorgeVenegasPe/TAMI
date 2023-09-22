@@ -6,7 +6,7 @@
     </div>
     <nav class="nav display" id="nav">
         <ul class="menu">
-            <li class="menu__item"><a class="menu__link" href="../index.php">Inicio</a></li>
+            <li class="menu__item"><a class="menu__link" href="../inicio.php">Inicio</a></li> <!-- Hans - Cambie el index.php por inicio.php -->
             <li class="menu__item"><a class="menu__link" href="nosotros.php">Nosotros</a></li>
             <li class="menu__item"><a class="menu__link" href="productos.php">Productos</a></li>
             <li class="menu__item"><a class="menu__link" href="compras.php">Compras</a></li>

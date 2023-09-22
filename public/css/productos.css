@@ -126,6 +126,8 @@ h2 {
   margin: 1rem;
   width: 70%;
   position: relative;
+  background-color: white; /* Agregar fondo blanco */
+  padding: 15px; 
 }
 
 @media screen and (min-width: 830px) {
@@ -148,12 +150,12 @@ h2 {
 .productos__img {
   height: 97px;
   width: 100%;
-  object-fit: cover;
+  object-fit: fill; /* Hans - Cambio de cover a fill */ 
 }
 
 @media screen and (min-width: 815px) {
   .productos__img {
-    height: 77%;
+    height: 85%;
   }
 }
 
@@ -168,6 +170,7 @@ h2 {
   opacity: 0;
   text-decoration: none;
   transition: opacity .4s;
+  position: relative;
 }
 
 @media screen and (min-width: 830px) {
@@ -177,159 +180,93 @@ h2 {
   }
 }
 
-.detalles {
+
+.modal {
+  display: none; /* Oculta el modal por defecto */
   position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(39, 38, 38, .5);
-  z-index: 40;
-  top: 1px;
-  right: 0;
-  padding: 6rem 1rem;
-  margin: 0;
-  display: none;
-  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro semi-transparente */
+  backdrop-filter: blur(10px);
+  z-index: 999999;
+  overflow: auto;
+  transition: .3s ease;
 }
 
-@media screen and (min-width: 830px) {
-  .detalles {
-    padding: 5rem;
-  }
+/* Estilo del contenido del modal */
+.modal-content {
+  background-color: #fff;
+  margin: 10% auto; /* Centra verticalmente con un pequeño margen superior */
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 600px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
 }
 
-.detalles__imagen {
-  background-color: rgb(236, 236, 236);
-  flex: 2;
-  padding: 1rem 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-@media screen and (min-width: 830px) {
-  .detalles__imagen {
-    display: block;
-  }
-}
-
-.detalles__img {
-  width: 100%;
-  padding-left: 26px;
-  object-fit: cover;
-}
-
-@media screen and (min-width: 830px) {
-  .detalles__img {
-    width: 50%;
-    padding-left: 0;
-  }
-}
-
-.detalles__content {
-  background-color: rgb(236, 236, 236);
-  display: flex;
-  flex-direction: column;
-  flex: 0;
-  align-items: flex-start;
-  padding: 0;
-  flex-wrap: wrap;
-  padding-left: 1rem;
-
-}
-
-@media screen and (min-width: 830px) {
-  .detalles__content {
-    flex: 1;
-    padding: 1rem;
-  }
-}
-
-.cerrar {
-  display: flex;
-  text-align: center;
-  flex: 1;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  margin-left: -110px;
-  margin-top: -100px;
-}
-
-.detalles__titulo {
-  text-align: center;
-}
-
-@media screen and (min-width: 830px) {
-  .detalles__titulo {
-    text-align: initial;
-  }
-}
-
-.icono {
-  display: flex;
-  justify-content: flex-end;
+/* Estilo del botón de cierre en el modal */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  font-weight: bold;
   cursor: pointer;
-  font-size: 1.3rem;
-  width: 100%;
-  padding-right: 1rem;
+  color: #555;
 }
 
-.detalles__formulario {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: flex-start;
+/* Estilo para el título del modal */
+.modal-content h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
 }
 
-.detalles__cantidad {
-  width: 25%;
-  margin: .5rem 0;
+/* Estilo para la imagen del producto */
+.modal-content img {
+  max-width: 50%;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.detalles__boton {
-  margin: 1rem 0;
-  width: 100%;
-  background-color: rgba(17, 131, 116, 0.986);
-  color: white;
-  padding: .8rem;
-  cursor: pointer;
-  border-radius: 20px;
-  border: 1px solid;
+/* Estilo para el precio */
+.modal-content p {
+  font-size: 18px;
+  color: #333;
+  margin-top: 15px;
 }
 
-.detalles__boton:hover {
-  background-color: var(--color-botones);
+/* Estilo para animar la apertura del modal */
+.modal.fade-in {
+  animation: fadeIn 0.3s ease;
 }
 
-.detalles__link {
-  background-color: rgb(236, 236, 236);
-
+/* Estilo para animar el cierre del modal */
+.modal.fade-out {
+  animation: fadeOut 0.3s ease;
 }
 
-.display2 {
-  display: flex;
-}
-
-.cerrar {
-  display: none;
-}
-
-@media screen and (min-width: 830px) {
-  .cerrar {
-    display: flex;
+/* Definición de las animaciones */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
-.fig {
-  display: block;
-  padding-left: 26px;
-  margin-top: 1rem;
-}
-
-@media screen and (min-width: 830px) {
-  .fig {
-    display: none;
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-20px);
   }
 }
