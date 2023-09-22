@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="icon" href="../public/images/logo_sin_fondo.png" type="image/x-icon">
+  <link rel="icon" href="../public/images/TAMI LOGO transparente 2.png" type="image/x-icon">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Productos | TAMI</title>
@@ -20,14 +20,7 @@
     <section class="productos__catalogo" id="catalogo1">
       <h2 class="productos__tituloCatalogo" id="productos__tituloCatalogo">Catálogo</h2>
       <div class="productos__imagenes">
-        <figure class="productos__item" id="maquina__laminadora">
-          <a class="productos__link1" href="#productos__tituloCatalogo">
-            <img class="productos__img" src="../public/images/catalogo_productos/laminadora.jpg" alt="LAMINADORA">
-            Máquina laminadora
-          </a>
-          <figcaption class="productos__description"> <a href="#productos__tituloCatalogo"
-              class="productos__link2">Vista rápida</a></figcaption>
-        </figure>
+        
         <figure class="productos__item" id="maquina__selladora">
           <a href="#productos__tituloCatalogo" class="productos__link1">
             <img class="productos__img" src="../public/images/catalogo_productos/selladora.jpg" alt="SELLADORA" />
