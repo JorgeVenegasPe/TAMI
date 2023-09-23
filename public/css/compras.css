@@ -1,31 +1,266 @@
 @media screen and (min-width: 830px) {
-    .menu__item:nth-child(4) {
-      background-color: var(--color-primario1);
-      position: relative;
-    }
-  
-    .menu__item:nth-child(4)::before {
-      content: "";
-      display: block;
-      background-color: black;
-      height: 2rem;
-      width: 30%;
-      position: absolute;
-      bottom: -.9rem;
-      transform: translate(70%, -20%) rotate(52deg);
-      z-index: -1;
-      background-color: var(--color-primario1);
-      border: 2px solid gray;
-    }
-  }
-  @media screen and (min-width: 830px) {
-    .main__compras {
-      margin-top: 10rem;
-    }
+  .menu__item:nth-child(4) {
+    background-color: var(--color-primario1);
+    position: relative;
   }
 
-  .main__compras{
-    width: 500px;
+  .menu__item:nth-child(4)::before {
+    content: "";
+    display: block;
+    background-color: black;
+    height: 2rem;
+    width: 30%;
+    position: absolute;
+    bottom: -0.9rem;
+    transform: translate(70%, -20%) rotate(52deg);
+    z-index: -1;
+    background-color: var(--color-primario1);
+    border: 2px solid gray;
+  }
+}
+@media screen and (min-width: 830px) {
+  .main__compras {
+    margin-top: 10rem;
+  }
+}
+
+/*CODIGO DEL CARRUCEL -RESPONSI*/
+html,
+body {
+  height: 101%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1;
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-inner {
+  align-items: center;
+  justify-content: space-between;
+  transition: transform 0.5s ease-in-out;
+  width: 80%;
+}
+
+.carousel-item {
+  width: 100%;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.carousel-image img {
+  height: 200px;
+  width: 200px;
+  object-fit: fill; /* Hans - Reemplace cover por fill */
+}
+
+.carousel-description {
+  font-size: 18px;
+  text-align: left;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  height: 200px;
+}
+
+.carousel-btn {
+  background-color: transparent;
+  color: #57bdbc;
+  border: 2px solid #57bdbc;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 6px 8px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+
+.carousel-btn:hover {
+  background-color: #57bdbc;
+  color: #fff;
+}
+
+#prevBtn {
+  left: 10px;
+}
+
+#nextBtn {
+  right: 10px;
+}
+
+.main__compras {
+  margin-left: 15%;
+  width: 70%;
+  height: 500px;
+  color: black;
+}
+
+.button {
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+  border: none;
+  background-color: #049c9b;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #2dacad;
+}
+
+.contenedor_btn {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 20px 20px;
+  gap: 5px;
+}
+
+.contenedor_pyp {
+  text-align: center;
+}
+
+.nombre {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: lato;
+  color: #049b9c;
+}
+
+.producto {
+  margin: 0;
+  padding: 0;
+}
+
+.precio {
+  margin: 0;
+  padding: 0;
+  font-family: lato;
+}
+
+@media (max-width: 798px) {
+  .carousel-image img {
+    height: 200px;
+    width: 160px;
+    object-fit: cover;
+  }
+
+  .main__compras {
+    margin-left: 20%;
+    width: 60%;
     height: 500px;
     color: black;
   }
+}
+
+@media (min-width: 1583px) {
+  .main__compras {
+    margin-left: 30%;
+    width: 40%;
+    height: 500px;
+    color: black;
+  }
+}
+
+@media (max-width: 780px) {
+  .carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    height: 500px;
+  }
+
+  .carousel-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+  }
+
+  .carousel-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  .carousel-image img {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+  }
+
+  .carousel-description {
+    font-size: 18px;
+    text-align: left;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  .carousel-btn {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 24px;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+  }
+
+  #prevBtn {
+    left: 10px;
+  }
+
+  #nextBtn {
+    right: 10px;
+  }
+
+  .main__compras {
+    margin-left: 25%;
+    width: 50%;
+    height: 100%;
+    color: black;
+  }
+
+  .carousel-description.active {
+    display: block;
+  }
+  .contenedor_btn {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 70%;
+    margin-left: 15%;
+    padding: 10px 20px;
+    gap: 5px;
+  }
+  .button {
+    height: 25px;
+  }
+}

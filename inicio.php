@@ -38,7 +38,7 @@
       <h1 class="panel__titulo">SOMOS TAMI</h1>
       <h2 class="panel__subtitulo">TECNOLOGÍA AGRÍCOLA MÉDICA DE INNOVACIÓN</h2>
       <p class="panel__descripcion">Brindamos soluciones con tecnología de calidad<span class="small">Contamos con una amplia variedad de productos</span></p>
-      <div class="panel__boton"><a class="panel__link" href="views/productos">Ver productos</a></div>
+      <div class="panel__boton"><a class="panel__link" href="views/productos.php">Ver productos</a></div>
     </section>
     <section class="productos" id="productos">
     <figure class="productos__img"><video class="vid__item" src="public/images/gif/maquina_ozono.mp4" autoplay="autoplay" muted="muted" loop="loop"></video></figure>
@@ -56,10 +56,10 @@
       <p class="footer__titulo">TAMI</p>
       <ul class="footer__sociales">
         <li class="footer__item footer__face"><a class="footer__link" href="https://www.facebook.com/tamiperu01"
-            target="_blank"><i class="fab fa-facebook-f icono__1""></i><span>TAMI PERU</span></a></li> 
-        <li class=" footer__item footer__whas"><a class="footer__link"><i class="fab fa-whatsapp icono__1""></i><span>936910425</span></a></li>
+            target="_blank"><i class="fab fa-facebook-f icono__1"></i><span>TAMI PERU</span></a></li> 
+        <li class=" footer__item footer__whas"><a class="footer__link"><i class="fab fa-whatsapp icono__1"></i><span>936910425</span></a></li>
         <li class=" footer__item"><a class="footer__link" href="https://www.instagram.com/tamiperu01/?hl=es-la" target="_blank"><i class="fab fa-instagram icono__1"></i><span>@tamiperu01</span></a></li>
-        <li class="footer__item"><a class="footer__link"><i class="far fa-envelope icono__1""></i><span>informestami01@gmail.com</span></a></li>
+        <li class="footer__item"><a class="footer__link"><i class="far fa-envelope icono__1"></i><span>informestami01@gmail.com</span></a></li>
       </ul>
       <p class=" footer_copy">©2021 por Tami.</p>
     </div>
