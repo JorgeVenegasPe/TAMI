@@ -37,3 +37,432 @@ body {
 main {
   flex-grow: 1;
 }
+
+/*ESTILOS DEL CONTENIDO DE COMPRAS*/
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Estilos para el modal de carrito de compras */
+.main__compras {
+  width: 100%;
+  margin-bottom: 10px;
+  /*background-color: burlywood;*/
+  overflow: hidden;
+  /* Agrega esta línea para ocultar el desbordamiento de contenido */
+}
+
+.modal {
+  z-index: 1;
+  left: 0;
+  top: 0;
+  margin-left: 25%;
+  width: 50%;
+  height: 100%;
+  /*background-color: brown;*/
+}
+
+.modal-content {
+  background-color: #fff;
+  border: 1px solid #888;
+  width: 100%;
+  height: 70%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  text-align: center;
+  overflow-y: auto;
+  margin-bottom: 10px;
+  /* Agrega esta línea para permitir el desplazamiento vertical */
+}
+
+.modal-content::-webkit-scrollbar {
+  display: none;
+}
+
+/* Estilos para el botón de cerrar el modal */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.pagos-btn {
+  flex: 1;
+  height: 35px;
+  background-color: transparent;
+  background-color: #049b9c;
+  color: #fff;
+  border-radius: 8px;
+  border: 2px solid #049c9b;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+  /* Agrega esta línea para la transición de color */
+}
+
+.pagos-btn:hover {
+  background-color: #fff;
+  color: #0fa0a1;
+  border: 2px solid #57bcbd;
+  /* Cambia el color al pasar el mouse por encima */
+}
+
+.btn-comprando {
+  width: 50%;
+  height: 35px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  background-color: #049c9b;
+  color: #fff;
+  font-size: 18px;
+  font-family: lato;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 2px solid #049c9b;
+}
+
+.btn-comprando:hover {
+  background-color: #fff;
+  color: #0fa0a1;
+  font-size: 18px;
+  border: 3px solid #57bcbd;
+}
+
+/* Estilo para el fondo oscurecido */
+.modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Fondo oscurecido con opacidad */
+  z-index: 1000;
+}
+
+/* Estilo para el formulario */
+.modal-form {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: white;
+  z-index: 1001;
+  margin: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+*::after,
+*::before,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*::after,
+*::before,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+user agent stylesheet h1 {
+  display: block;
+  font-size: 2em;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+.service-modal.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.service-modal.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.service-modal {
+  z-index: 999999;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease;
+}
+
+.service-modal {
+  z-index: 999999;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease;
+}
+
+:root {
+  --swiper-navigation-size: 44px;
+}
+
+:root {
+  --swiper-theme-color: #007aff;
+}
+
+*::after,
+*::before,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*::after,
+*::before,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*::after,
+*::before,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*::after,
+*::before,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.box-input {
+  border-bottom: 2px solid #adadad;
+  position: relative;
+  margin: 4px;
+}
+
+.box-input input,
+textarea {
+  font-size: 10px;
+  color: #333;
+  border: none;
+  width: 100%;
+  outline: none;
+  background: none;
+  padding: 15px;
+  height: 20px;
+}
+
+.metodos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.metodos .yape {
+  height: 60px;
+  width: auto;
+}
+
+.metodos .visa {
+  height: 20px;
+  width: auto;
+}
+
+.metodos .plin {
+  height: 50px;
+  width: auto;
+}
+
+element.style {
+  justify-content: inherit;
+}
+
+.container-butt {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-butt {
+  display: flex;
+  gap: 20px;
+}
+
+.container-butt {
+  padding: 1em;
+}
+
+.container-butt {
+  display: flex;
+  gap: 20px;
+}
+
+.container-butt {
+  padding: 1em;
+}
+
+.box-input-total {
+  display: flex;
+  flex-direction: row;
+}
+
+.box-input input,
+textarea {
+  font-size: 16px;
+  color: #333;
+  border: none;
+  width: 100%;
+  outline: none;
+  background: none;
+  padding: 15px;
+  height: 30px;
+}
+
+form#formularioRecogerEnTienda {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.inputs-selects {
+  height: 20px;
+}
+
+.aaa {
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
+}
+
+.container-butt .button-T {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 15px;
+  gap: 15px;
+  background-color: #009f9d;
+  outline: 3px #fff solid;
+  outline-offset: -3px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 400ms;
+  color: #fff;
+  text-decoration: none;
+}
+
+.container-butt .button-T:hover {
+  background-color: #fff;
+  color: #009f9d;
+  outline-offset: -3px;
+  text-decoration: none;
+  outline: 3px #009f9d solid;
+}
+
+.cerrar-modal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+  /* Agrega una transición suave */
+}
+
+.cerrar-modal:hover {
+  transform: scale(1.2);
+  /* Cambia el tamaño del ícono al pasar el ratón por encima */
+}
+
+@media screen and (min-width: 830px) {
+  .modal-form {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .modal-form {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1583px) {
+  .modal-form {
+    width: 40%;
+  }
+}
+
+/*responsibol */
+@media screen and (min-width: 540px) {
+  .modal {
+    margin-left: 15%;
+    width: 70%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 798px) {
+  .modal {
+    margin-left: 20%;
+    width: 60%;
+    height: 100%;
+  }
+
+  .btn-comprando {
+    width: 90%;
+  }
+}
+
+@media (min-width: 1583px) {
+  .modal {
+    margin-left: 32%;
+    width: 36%;
+    height: 100%;
+  }
+}
+
+@media (min-width: 1184px) {
+  .modal {
+    margin-left: 30%;
+    width: 40%;
+    height: 100%;
+  }
+}

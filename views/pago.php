@@ -9,146 +9,6 @@
     <link rel="stylesheet" type="text/css" href="../public/css/menu.css">
     <link rel="stylesheet" type="text/css" href="../public/css/pago.css">
     <link rel="stylesheet" type="text/css" href="../public/css/footer.css">
-
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-
-        /* Estilos para el modal de carrito de compras */
-        .main__compras {
-            width: 100%;
-            margin-bottom: 10px;
-            /*background-color: burlywood;*/
-            overflow: hidden;
-            /* Agrega esta línea para ocultar el desbordamiento de contenido */
-        }
-
-
-        .modal {
-            z-index: 1;
-            left: 0;
-            top: 0;
-            margin-left: 25%;
-            width: 50%;
-            height: 100%;
-            /*background-color: brown;*/
-        }
-
-        .modal-content {
-            background-color: #fff;
-            border: 1px solid #888;
-            width: 100%;
-            height: 70%;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-            text-align: center;
-            overflow-y: auto;
-            margin-bottom: 10px;
-            /* Agrega esta línea para permitir el desplazamiento vertical */
-        }
-
-        .modal-content::-webkit-scrollbar {
-            display: none;
-        }
-
-        /* Estilos para el botón de cerrar el modal */
-        .close {
-            color: #aaa;
-            float: right;
-            font-size: 28px;
-            font-weight: bold;
-        }
-
-        .close:hover,
-        .close:focus {
-            color: black;
-            text-decoration: none;
-            cursor: pointer;
-        }
-
-
-
-        .pagos-btn {
-            flex: 1;
-            height: 35px;
-            background-color: transparent;
-            background-color: #049B9C;
-            color: #fff;
-            border-radius: 8px;
-            border: 2px solid #049C9B;
-            color: #fff;
-            cursor: pointer;
-            transition: background-color 0.5s ease;
-            /* Agrega esta línea para la transición de color */
-        }
-
-        .pagos-btn:hover {
-            background-color: #fff;
-            color: #0FA0A1;
-            border: 2px solid #57BCBD;
-            /* Cambia el color al pasar el mouse por encima */
-        }
-
-        .btn-comprando {
-            width: 50%;
-            height: 35px;
-            margin-bottom: 10px;
-            margin-left: 10px;
-            background-color: #049C9B;
-            color: #fff;
-            font-size: 18px;
-            font-family: lato;
-            border-radius: 5px;
-            cursor: pointer;
-            border: 2px solid #049C9B;
-        }
-
-        .btn-comprando:hover {
-            background-color: #fff;
-            color: #0FA0A1;
-            font-size: 18px;
-            border: 3px solid #57BCBD;
-        }
-
-        /*responsibol */
-        @media screen and (min-width: 540px) {
-            .modal {
-                margin-left: 15%;
-                width: 70%;
-                height: 100%;
-            }
-
-        }
-
-
-        @media (max-width: 798px) {
-            .modal {
-                margin-left: 20%;
-                width: 60%;
-                height: 100%;
-            }
-
-            .btn-comprando {
-                width: 90%;
-            }
-        }
-
-        @media (min-width: 1583px) {
-            .modal {
-                margin-left: 32%;
-                width: 36%;
-                height: 100%;
-            }
-        }
-
-        @media (min-width: 1184px) {
-            .modal {
-                margin-left: 30%;
-                width: 40%;
-                height: 100%;
-            }
-        }
-    </style>
 </head>
 
 <body>
@@ -186,33 +46,236 @@
                     echo "No se han pasado datos del carrito.";
                 }
                 ?>
+
+
             </div>
             <div style="width: 60%; margin-left: 20%; display: flex; justify-content: center; align-items: center; gap: 10px; height: 40px;">
-                <button class="pagos-btn">
-                    <i class="fas fa-store"></i> Recojo en tienda
+                <button class="pagos-btn" onclick="mostrarFormulario()">
+                    <i class="fas fa-store"></i> Recoger en tienda
                 </button>
-                <button class="pagos-btn">
+                <button class="pagos-btn" onclick="mostrarFormularioDelivery()">
                     <i class="fas fa-truck"></i> Delivery
                 </button>
             </div>
 
 
+
+            <div class="modal-overlay" id="overlay"></div>
+            <form id="formularioRecogerEnTienda" class="modal-form" method="post"><a id="cerrarModal" class="cerrar-modal" onclick="cerrarFormulario()">
+                    <i class="fas fa-times"></i>
+                </a>
+
+                <h1 style="text-align: center;">Datos de facturación</h1>
+                <div class="box-input">
+                    <h4>Recoger en tienda:</h4>
+                    <h5>Av. Arenales 963, Cercado de Lima, Perú</h5>
+                    <h6>LIMA, LIMA, LIMA, PERÚ</h6>
+                    <!--<a href="">Cambiar</a>-->
+                    <br>
+                    <br>
+                    <input type="hidden" name="ubicacion" id="ubicacion" value="Av. Arenales 963, Cercado de Lima, Perú">
+                </div>
+                <div class="container-butt" style="justify-content:inherit">
+                    <a class="button-T active">
+                        <i class="ri-arrow-left-line"></i>
+                        <p class="text">Boleta</p>
+                    </a>
+                    <a class="button-T">
+                        <p class="text finalcomp">Factura</p>
+                        <i class="ri-arrow-right-line"></i>
+                    </a>
+                </div>
+                <h1 style="text-align: center;">Datos de Personales</h1>
+                <div class="box-input">
+                    <!--<label class="labelimp" for="nombre_cliente" style="visibility: hidden;">Nombre:</label>-->
+                    <input name="nombre_cliente" id="nombre_cliente" type="text" required>
+                </div>
+                <div class="box-input-total">
+                    <div class="box-input">
+                        <label for="">Documento:</label>
+                        <div class="inputs-selects">
+                            <select style="text-align:center" name="documento" id="documento">
+                                <option value="DNI" class="dni">DNI</option>
+                                <option value="Pasaporte">Pasaporte</option>
+                                <option value="Carnet de extranjeria">Carnet de extranjería</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="box-input">
+                        <label class="labelimp" for="telefono">Número de Documento:</label>
+                        <input name="n_document" id="n_document" type="text" required>
+                    </div>
+                    <div class="box-input" style="display: none;">
+                        <label class="labelimp" for="telefono">Razón Social:</label>
+                        <input name="referencia" id="referencia" type="text">
+                    </div>
+                </div>
+                <div class="box-input">
+                    <label class="labelimp" for="telefono">Correo Electrónico:</label>
+                    <input name="correo" id="correo" type="text" required>
+                </div>
+                <div class="box-input">
+                    <label class="labelimp" for="telefono">Celular:</label>
+                    <input name="celular" id="celular" type="text" required>
+                </div>
+                <div class="box-input" id="distrito" name="distrito">
+                    <label for="">Distrito</label>
+                    <br>
+                    <div class="inputs-selects">
+                        <select style="text-align:center" name="distrito" id="distrito">
+                            <option value="Ancon">Ancon</option>
+                            <option value="Puente Piedra">Puente Piedra</option>
+                            <option value="Comas">Comas</option>
+                        </select>
+                    </div>
+                    <br>
+                </div>
+                <div class="box-input">
+                    <label class="labelimp" for="telefono">Dirección:</label>
+                    <input name="direccion" id="direccion" type="text" required>
+                </div>
+                <br>
+                <div class="metodos-pago">
+                    <p style="text-align:center;">Métodos de Pago:</p>
+                    <div class="metodos">
+                        <a><img class="yape" src="../public/images/logos_pago/LogoYape.png"></a>
+                        <a><img class="visa" src="../public/images/logos_pago/LogoVisa.png"></a>
+                        <a><img class="plin" src="../public/images/logos_pago/LogoPlin.png"></a>
+                    </div>
+                </div>
+                <div class="aaa">
+                    <input type="checkbox" value="Acepto los Términos y Condiciones y Políticas de privacidad">
+                    <p>Acepto los Términos y Condiciones y Políticas de privacidad</p>
+                </div>
+                <div class="container-butt">
+                    <a href="compras.php" class="button-T">
+                        <i class="ri-arrow-left-line"></i>
+                        <p class="text">Seguir Comprando </p>
+                    </a>
+                    <button type="submit" class="button-T" name="register2" id="register2">
+                        <i class="ri-arrow-right-line"></i>
+                        <p class="text finalcomp">Finalizar Compra</p>
+                    </button>
+                </div>
+            </form>
+
+
+            <form id="formularioDelivery" class="modal-form" method="post"><a id="cerrarModal" class="cerrar-modal" onclick="cerrarFormulario()">
+                    <i class="fas fa-times"></i>
+                </a>
+
+                <h1 style="text-align: center;">Informacion de Contacto</h1>
+                <div class="box-input">
+                    <label class="labelimp" for="telefono"> Nombre y Apellido</label>
+                    <input name="nombre_cliente" id="nombre_cliente" type="text" required>
+                </div>
+                <div class="box-input-total">
+                    <div class="box-input">
+                        <label for="">Documento:</label>
+                        <div class="inputs-selects">
+                            <select style="text-align:center" name="documento" id="documento">
+                                <option value="DNI" class="dni">DNI</option>
+                                <option value="Pasaporte">Pasaporte</option>
+                                <option value="Carnet de extranjeria">Carnet de extranjeria</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="box-input">
+                        <label class="labelimp" for="telefono"> Numero de Documento:</label>
+                        <input name="n_document" id="n_document" type="text" required>
+                    </div>
+                </div>
+                <div class="box-input">
+                    <label class="labelimp" for="telefono"> Correo Electronico:</label>
+                    <input name="correo" id="correo" type="text" required>
+                </div>
+                <div class="box-input">
+                    <label class="labelimp" for="telefono"> Celular:</label>
+                    <input name="celular" id="celular" type="text" required>
+                </div>
+                <h1 style="text-align: center;">Direccion de Envio</h1>
+                <div class="box-input">
+                    <label for="">Distrito</label>
+                    <br>
+                    <div class="inputs-selects">
+                        <select style="text-align:center" name="distrito" id="distrito">
+                            <option value="Ancon">Ancon</option>
+                            <option value="Puente Piedra">Puente Piedra</option>
+                            <option value="Comas">Comas</option>
+                        </select>
+                    </div>
+                    <br>
+                </div>
+                <div class="box-input">
+                    <label class="labelimp" for="telefono"> Direccion:</label>
+                    <input name="direccion" id="direccion" type="text" required>
+                </div>
+                <div class="box-input">
+                    <label class="labelimp" for="telefono">Referencia</label>
+                    <textarea name="referencia" id="referencia" required></textarea>
+                </div>
+                <br>
+                <div class="metodos-pago">
+                    <p style="text-align:center;">Metodos de Pago:</p>
+                    <div class="metodos">
+                        <a><img class="yape" src="../public/images/logos_pago/LogoYape.png"></a>
+                        <a><img class="visa" src="../public/images/logos_pago/LogoVisa.png"></a>
+                        <a><img class="plin" src="../public/images/logos_pago/LogoPlin.png"></a>
+                    </div>
+                </div>
+                <div class="aaa">
+                    <input type="checkbox" value="Acepto los Términos y Condiciones y Políticas de privacidad">
+                    <p>Acepto los Términos y Condiciones y Políticas de privacidad</p>
+                </div>
+                <div class="container-butt">
+                    <a href="compras.php" class="button-T">
+                        <i class="ri-arrow-left-line"></i>
+                        <p class="text">Seguir Comprando </p>
+                    </a>
+                    <div class="container-butt">
+                        <button type="submit" class="button-T" name="register" id="register">
+                            <i class="ri-arrow-right-line"></i>
+                            <p class="text finalcomp">Finalizar Compra</p>
+                        </button>
+                    </div>
+                </div>
+            </form>
         </div>
     </main>
-
-    <?php include_once "footer.php"; ?>
-    <script type="application/javascript" src="../public/js/main.js" async></script>
-
     <script>
-        // Mostrar el modal al cargar la página
-        window.onload = function() {
-            document.getElementById('myModal').style.display = 'block';
+        // Función para mostrar el formulario de recoger en tienda y el fondo oscurecido
+        function mostrarFormulario() {
+            var overlay = document.getElementById('overlay');
+            var formulario = document.getElementById('formularioRecogerEnTienda');
+            overlay.style.display = 'block';
+            formulario.style.display = 'block';
         }
 
-        function closeModal() {
-            document.getElementById('myModal').style.display = 'none';
+        // Función para mostrar el formulario de entrega (Delivery) y el fondo oscurecido
+        function mostrarFormularioDelivery() {
+            var overlay = document.getElementById('overlay');
+            var formulario = document.getElementById('formularioDelivery');
+            overlay.style.display = 'block';
+            formulario.style.display = 'block';
+        }
+
+        // Función para cerrar el formulario y el fondo oscurecido
+        function cerrarFormulario() {
+            var overlay = document.getElementById('overlay');
+            var formularioRecogerEnTienda = document.getElementById('formularioRecogerEnTienda');
+            var formularioDelivery = document.getElementById('formularioDelivery');
+            overlay.style.display = 'none';
+            formularioRecogerEnTienda.style.display = 'none';
+            formularioDelivery.style.display = 'none';
+        }
+
+        // Función para continuar comprando
+        function continuarComprando() {
+            window.location.href = "compras.php";
         }
     </script>
+    <?php include_once "footer.php"; ?>
+    <script type="application/javascript" src="../public/js/main.js" async></script>
     <!-- Dentro del head -->
     <script>
         function continuarComprando() {

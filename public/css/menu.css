@@ -1,297 +1,279 @@
-@font-face {
+@font-face{
   font-family: lato;
   font-display: block;
   src: url("../fonts/lato-light/Lato-Bold.ttf");
 }
 
-@font-face {
+@font-face{
   font-family: lato-light;
   font-display: block;
   src: url("../fonts/lato-light/Lato-Light.ttf");
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
 
-body {
-  font-family: var(--fuente);
-  margin: 0;
-}
+  body {
+    font-family: var(--fuente);
+    margin: 0;
+  }
 
-:root {
-  --fuente: lato;
-  --stop: paused;
-  --stop1: paused;
-  --stop3: paused;
-  --stop4: paused;
-  --stop5: paused;
-  --stop6: paused;
-  --stop7: paused;
-  --color-botones: rgb(4, 156, 155);
-  --hoverbotonpanel: rgba(4, 156, 155, 0.6);
-  --color-primario1: rgb(135, 230, 230);
-  --color-secundario2: rgb(4, 156, 155);
-  --color-prymario: hsl(180, 50%, 65%);
-  --color-secundario: #286780;
-  --ancho-todaPagina: 100%;
-  --fondo-header: white;
-  --ancho-logo: 5.4rem;
-  --altura-barraHamburguesa: 0.25rem;
-  --color-barraHamburguesa: black;
-  --fondo-nav: white;
-  --color-linkNav: black;
-  --color-hoverNav: hsl(180, 40%, 97%);
-  --color-linkFootter: black;
-  --fontsize-titulo: 2rem;
-  --fontsize-normal: 1rem;
-  --fontsize-small: 0.7rem;
-}
+  :root {
+    --fuente: lato;
+    --stop: paused;
+    --stop1: paused;
+    --stop3: paused;
+    --stop4: paused;
+    --stop5: paused;
+    --stop6: paused;
+    --stop7: paused;
+    --color-botones: rgb(4, 156, 155);
+    --hoverbotonpanel: rgba(4, 156, 155, .6);
+    --color-primario1: rgb(135, 230, 230);
+    --color-secundario2: rgb(4, 156, 155);
+    --color-prymario: hsl(180, 50%, 65%);
+    --color-secundario: #286780;
+    --ancho-todaPagina: 100%;
+    --fondo-header: white;
+    --ancho-logo: 5.4rem;
+    --altura-barraHamburguesa: 0.25rem;
+    --color-barraHamburguesa: black;
+    --fondo-nav: white;
+    --color-linkNav: black;
+    --color-hoverNav: hsl(180, 40%, 97%);
+    --color-linkFootter: black;
+    --fontsize-titulo: 2rem;
+    --fontsize-normal: 1rem;
+    --fontsize-small: .7rem;
+  }
 
-.main__contacto,
-.footer,
-.main__nosotros,
-.main__inicio,
-.main__politicaEnvio,
-.main__productos {
-  width: var(--ancho-todaPagina);
-  margin-left: auto;
-  margin-right: auto;
-}
-
-@media screen and (min-width: 830px) {
   .main__contacto,
   .footer,
   .main__nosotros,
-  .main__contacto,
-  .main_inicio {
-    --ancho-todaPagina: 100%;
+  .main__inicio,
+  .main__politicaEnvio,
+  .main__productos {
     width: var(--ancho-todaPagina);
+    margin-left: auto;
+    margin-right: auto;
   }
-}
 
-.header {
-  display: flex;
-  align-items: center;
-  padding-right: 1rem;
-}
+  @media screen and (min-width: 830px) {
 
-@media screen and (min-width: 830px) {
+    .main__contacto,
+    .footer,
+    .main__nosotros,
+    .main__contacto,
+    .main_inicio {
+      --ancho-todaPagina: 100%;
+      width: var(--ancho-todaPagina);
+    }
+  }
+
   .header {
     display: flex;
     align-items: center;
-    top: 0;
-    right: 0;
-    position: fixed;
-    background-color: var(--fondo-header);
-    z-index: 30;
-    width: 100%;
-    padding-bottom: 1rem;
+    padding-right: 1rem;
   }
-}
 
-.header__logo {
-  width: var(--ancho-logo);
-  margin-left: auto;
-  margin-right: auto;
-  margin: 0;
-  margin-left: 10px;
-  margin-top: 10px;
-  margin-bottom: 7px;
-}
+  @media screen and (min-width: 830px) {
+    .header {
+      display: flex;
+      align-items: center;
+      top: 0;
+      right: 0;
+      position: fixed;
+      background-color: var(--fondo-header);
+      z-index: 30;
+      width: 100%;
+      padding-bottom: 1rem;
+    }
+  }
 
-@media screen and (min-width: 830px) {
   .header__logo {
-    margin-top: 1rem;
-    flex: 0.5;
-    display: flex;
-    margin-bottom: 0;
-    margin-left: 47px;
+    width: var(--ancho-logo);
+    margin-left: auto;
+    margin-right: auto;
+    margin: 0;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 7px;
   }
-}
 
-.header__img {
-  width: var(--ancho-logo);
-}
+  @media screen and (min-width: 830px) {
+    .header__logo {
+      margin-top: 1rem;
+      flex: .5;
+      display: flex;
+      margin-bottom: 0;
+      margin-left: 47px;
+    }
+  }
 
-.header__boton {
-  position: relative;
-  z-index: 20;
-  width: 1.8rem;
-  height: 1.1rem;
-  margin-right: 1rem;
-  position: relative;
-  margin-left: auto;
-  cursor: pointer;
-  transition: transform 0.25s;
-}
+  .header__img {
+    width: var(--ancho-logo);
+  }
 
-@media screen and (min-width: 830px) {
   .header__boton {
+    position: relative;
+    z-index: 20;
+    width: 1.8rem;
+    height: 1.1rem;
+    margin-right: 1rem;
+    position: relative;
+    margin-left: auto;
+    cursor: pointer;
+    transition: transform .25s;
+  }
+
+  @media screen and (min-width: 830px) {
+    .header__boton {
+      display: none;
+    }
+  }
+
+  .header__boton.active .header__hamburguesa {
     display: none;
   }
-}
 
-.header__boton.active .header__hamburguesa {
-  display: none;
-}
-
-.header__boton.active {
-  transform: rotate(180deg);
-  position: fixed;
-  right: 2.82rem;
-}
-
-.header__boton.active::before {
-  top: 50%;
-  transform: translateY(-50%) rotate(45deg);
-}
-
-.header__boton.active::after {
-  bottom: 50%;
-  transform: translateY(50%) rotate(-45deg);
-}
-
-.header__boton::before {
-  content: "";
-  height: var(--altura-barraHamburguesa);
-  display: block;
-  position: absolute;
-  background-color: var(--color-barraHamburguesa);
-  top: 0;
-  width: 100%;
-}
-
-.header__boton::after {
-  content: " ";
-  display: block;
-  position: absolute;
-  background-color: var(--color-barraHamburguesa);
-  bottom: 0;
-  width: 100%;
-  height: var(--altura-barraHamburguesa);
-}
-
-.header__hamburguesa {
-  position: absolute;
-  width: 100%;
-  height: var(--altura-barraHamburguesa);
-  background-color: var(--color-barraHamburguesa);
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.nav {
-  filter: opacity(1);
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background: white;
-  height: 100%;
-  z-index: 10;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: filter 0.25s ease-out;
-  flex: 0.8;
-}
-
-@media screen and (min-width: 830px) {
-  .nav {
-    width: initial;
-    height: initial;
-    flex: 1;
-    margin-right: 3rem;
+  .header__boton.active {
+    transform: rotate(180deg);
+    position: fixed;
+    right: 2.82rem;
   }
-}
 
-.menu {
-  text-align: center;
-  font-size: 1.5rem;
-  display: grid;
+  .header__boton.active::before {
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+  }
 
-  grid-template-rows: repeat(5, 3rem);
-  list-style: none;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
-}
+  .header__boton.active::after {
+    bottom: 50%;
+    transform: translateY(50%) rotate(-45deg);
+  }
 
-@media screen and (min-width: 830px) {
-  .menu {
+  .header__boton::before {
+    content: "";
+    height: var(--altura-barraHamburguesa);
     display: block;
+    position: absolute;
+    background-color: var(--color-barraHamburguesa);
+    top: 0;
+    width: 100%;
+  }
+
+  .header__boton::after {
+    content: " ";
+    display: block;
+    position: absolute;
+    background-color: var(--color-barraHamburguesa);
+    bottom: 0;
+    width: 100%;
+    height: var(--altura-barraHamburguesa);
+  }
+
+  .header__hamburguesa {
+    position: absolute;
+    width: 100%;
+    height: var(--altura-barraHamburguesa);
+    background-color: var(--color-barraHamburguesa);
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .nav {
+    filter: opacity(1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: white;
+    height: 100%;
+    z-index: 10;
     display: flex;
-    font-size: 1rem;
-    align-items: flex-end;
+    justify-content: center;
+    align-items: center;
+    transition: filter .25s ease-out;
+    flex: .8;
   }
-}
 
-.menu__link {
-  text-decoration: none;
-  color: var(--color-linkNav);
-}
-
-@media screen and (min-width: 830px) {
-  .menu__item {
-    padding: 1rem;
+  @media screen and (min-width: 830px) {
+    .nav {
+      width: initial;
+      height: initial;
+      flex: 1;
+      margin-right: 3rem;
+    }
   }
-}
 
-.menu__link:hover {
-  color: var(--color-botones);
-}
+  .menu {
+    text-align: center;
+    font-size: 1.5rem;
+    display: grid;
 
-@media screen and (min-width: 830px) {
-  .menu__item:hover {
-    background-color: var(--color-hoverNav);
+    grid-template-rows: repeat(5, 3rem);
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+  }
+
+  @media screen and (min-width: 830px) {
+    .menu {
+      display: block;
+      display: flex;
+      font-size: 1rem;
+      align-items: flex-end;
+    }
+  }
+
+  .menu__link {
+    text-decoration: none;
+    color: var(--color-linkNav);
+  }
+
+  @media screen and (min-width: 830px) {
+    .menu__item {
+      padding: 1rem;
+    }
   }
 
   .menu__link:hover {
-    color: var(--color-linkNav);
+    color: var(--color-botones);
   }
-}
 
-.display {
-  filter: opacity(0);
-  pointer-events: none;
-}
+  @media screen and (min-width: 830px) {
+    .menu__item:hover {
+      background-color: var(--color-hoverNav);
+    }
 
-@media screen and (min-width: 830px) {
+    .menu__link:hover {
+      color: var(--color-linkNav);
+    }
+  }
+
   .display {
-    filter: opacity(1);
-    position: static;
-    display: block;
-    pointer-events: initial;
+    filter: opacity(0);
+    pointer-events: none;
   }
-}
 
-@media screen and (min-width: 830px) {
-  .nav {
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-    border-bottom: 2px solid gray;
-    border-radius: 8px/2px;
+  @media screen and (min-width: 830px) {
+    .display {
+      filter: opacity(1);
+      position: static;
+      display: block;
+      pointer-events: initial;
+    }
   }
-}
-/*Daniel*/
-.main__compras {
-  width: 500px;
-  height: 500px;
-  color: black;
-}
-/* Estilo inicial de las casillas (ocultas) */
-.casilla {
-  display: none;
-  position: absolute;
-  background-color: white;
-  border: 1px solid #ccc;
-  padding: 10px;
-}
 
-/* Estilo para el enlace "Compras" al pasar el mouse */
-#compras:hover .casilla {
-  display: block;
-}
+  @media screen and (min-width: 830px) {
+    .nav {
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+      border-bottom: 2px solid gray;
+      border-radius: 8px/2px;
+    }
+  }
