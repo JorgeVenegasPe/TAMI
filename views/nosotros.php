@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<link rel="icon" href="../public/images/logo_sin_fondo.png" type="image/x-icon">
+<link rel="icon" href="../public/images/TAMI LOGO transparente 2.png" type="image/x-icon">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Nosotros | TAMI</title>
 <link rel="stylesheet" type="text/css" href="../public/css/menu.css" >
