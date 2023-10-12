@@ -197,12 +197,30 @@ h2 {
 /* Estilo del contenido del modal */
 .modal-content {
   background-color: #fff;
-  margin: 10% auto; /* Centra verticalmente con un pequeño margen superior */
+  margin: 10% auto; 
   padding: 20px;
   border-radius: 8px;
   max-width: 600px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   position: relative;
+  display: flex; 
+  align-items: center; 
+}
+
+.product-details {
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+}
+
+.product-details img {
+  max-width: 50%; 
+  margin-right: 20px; 
+}
+
+.product-info {
+  text-align: center;
+  flex-grow: 1; 
 }
 
 /* Estilo del botón de cierre en el modal */
@@ -219,7 +237,20 @@ h2 {
 /* Estilo para el título del modal */
 .modal-content h2 {
   font-size: 24px;
+  margin-top: 20px;
   margin-bottom: 15px;
+}
+
+.pro_titulo {
+  color: var(--color-primario1);
+  font-weight: bold;
+  text-align: center; /* Centra el contenido horizontalmente */
+}
+
+.sub_titulo {
+  font-weight: bold;
+  color: black;
+  text-align: center; /* Centra el contenido horizontalmente */
 }
 
 /* Estilo para la imagen del producto */

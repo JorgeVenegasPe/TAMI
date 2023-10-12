@@ -173,7 +173,8 @@
 
 .productos__img {
   width: 55%;
-  background-color: var(--color-prymario);
+  background-color: white;
+  border-bottom: 5px solid var(--color-prymario);
 }
 
 @media screen and (min-width: 440px) {
