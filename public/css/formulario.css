@@ -1,0 +1,103 @@
+@media screen and (min-width: 830px) {
+  .menu__item:nth-child(4) {
+    background-color: var(--color-primario1);
+    position: relative;
+  }
+
+  .menu__item:nth-child(4)::before {
+    content: "";
+    display: block;
+    background-color: black;
+    height: 2rem;
+    width: 30%;
+    position: absolute;
+    bottom: -0.9rem;
+    transform: translate(70%, -20%) rotate(52deg);
+    z-index: -1;
+    background-color: var(--color-primario1);
+    border: 2px solid gray;
+  }
+}
+@media screen and (min-width: 830px) {
+  .main__formulario {
+    margin-top: 10rem;
+  }
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.main__formulario {
+  width: 100%;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+/* Estilos para el formulario */
+.main__formulario {
+  text-align: center; /* Centra el contenido horizontalmente */
+}
+
+.main__formulario div {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ecfbfb; /* Fondo del formulario */
+  border: 1px solid #009f9d; /* Borde del formulario */
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  text-align: left; /* Alinea el texto a la izquierda */
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.form-column {
+  flex-basis: 45%; /* Ancho del 45% para cada columna */
+}
+
+h2 {
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea {
+  width: 100%;
+  max-width: 100%;
+  max-height: 150px;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #009f9d;
+  border-radius: 3px;
+}
+
+input[type="submit"] {
+  background-color: #009f9d;
+  color: #ecfbfb;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  display: block; /* Coloca el botón en una nueva línea */
+  margin: 0 auto; /* Centra el botón horizontalmente */
+}

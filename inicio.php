@@ -41,9 +41,9 @@
       <div class="panel__boton"><a class="panel__link" href="views/productos.php">Ver productos</a></div>
     </section>
     <section class="productos" id="productos">
-    <figure class="productos__img"><video class="vid__item" src="public/images/gif/maquina_ozono.mp4" autoplay="autoplay" muted="muted" loop="loop"></video></figure>
-      <figure class="productos__img"><video class="vid__item" src="public/images/gif/esterilizador_uv_ozono.mp4" autoplay="autoplay" muted="muted" loop="loop"></video></figure>
-      <figure class="productos__img"><video class="vid__item" src="public/images/gif/esterilizador_uv.mp4" autoplay="autoplay" muted="muted" loop="loop"></video></figure>
+    <figure class="productos__img"><img class="vid__item" src="public/images/catalogo_productos/selladora2.png" autoplay="autoplay" muted="muted" loop="loop"></img></figure>
+      <figure class="productos__img"><img class="vid__item" src="public/images/catalogo_productos/embalaje2.png" autoplay="autoplay" muted="muted" loop="loop"></img></figure>
+      <figure class="productos__img"><img class="vid__item" src="public/images/catalogo_productos/sellador_vasos2.png" autoplay="autoplay" muted="muted" loop="loop"></img></figure>
     </section>
     <div class="video" id="video">
       <div class="video__texto">Tecnología e<br> innovación como<br> garantía para tu salud.
@@ -57,7 +57,7 @@
       <ul class="footer__sociales">
         <li class="footer__item footer__face"><a class="footer__link" href="https://www.facebook.com/tamiperu01"
             target="_blank"><i class="fab fa-facebook-f icono__1"></i><span>TAMI PERU</span></a></li> 
-        <li class=" footer__item footer__whas"><a class="footer__link"><i class="fab fa-whatsapp icono__1"></i><span>936910425</span></a></li>
+        <li class=" footer__item footer__whas"><a class="footer__link"><i class="fab fa-whatsapp icono__1"></i><span>+51 978 883 199</span></a></li>
         <li class=" footer__item"><a class="footer__link" href="https://www.instagram.com/tamiperu01/?hl=es-la" target="_blank"><i class="fab fa-instagram icono__1"></i><span>@tamiperu01</span></a></li>
         <li class="footer__item"><a class="footer__link"><i class="far fa-envelope icono__1"></i><span>informestami01@gmail.com</span></a></li>
       </ul>
