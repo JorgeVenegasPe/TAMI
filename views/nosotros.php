@@ -22,11 +22,11 @@
       </div>
       <div class="nosotros__imagenes">
         <figure class="nosotros__mision"><img class="nosotros__img" src="../public/images/mision_vision/mision.jpg" alt="misión de la empresa"/></figure>
-        <figure class="nosotros__vision"><img class="nosotros__img" src="../public/images/mision_vision/vision.jpg" alt="visión de la empresa"/></figure>
+        <figure class="nosotros__vision"><img class="nosotros__img" src="../public/images/mision_vision/PW Reunión.jpg" alt="visión de la empresa"/></figure>
       </div>
     </section>
     <section class="valores">
-      <figure class="valores__header"><img class="valores__img" src="../public/images/valores/imagen_valores.jpg" alt=""/></figure>
+      <figure class="valores__header"><img class="valores__img" src="../public/images/mision_vision/PW Reunión.jpg" alt=""/></figure>
       <div class="valores__iconos" id="valores__iconos">
         <h2 class="valores__titulo">Nuestros valores</h2>
         <div class="valores__imagenes">

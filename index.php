@@ -11,7 +11,8 @@
 
 <body>
     <div>
-        <img src="public/images/TAMI LOGO Fondo blanco.png"  alt="">
+        <img src="public/images/TAMI LOGO transparente1.png"  alt="">
+        <p class="sub-titulo">“Tecnología e Innovación para TI”</p>
     </div>
 
 <script>
@@ -21,7 +22,7 @@
     }
 
     // Llama a la función de redirección después de 5 segundos (5000 milisegundos)
-    setTimeout(redireccionar, 5000);
+    setTimeout(redireccionar, 3000);
   </script>
 </body>
 </html>

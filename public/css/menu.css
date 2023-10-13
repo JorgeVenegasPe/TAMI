@@ -61,6 +61,11 @@
     margin-right: auto;
   }
 
+   .Linia{
+    width: 100%;
+    height: 2ps;
+    background-color: black;
+   }
   @media screen and (min-width: 830px) {
 
     .main__contacto,
@@ -74,9 +79,10 @@
   }
 
   .header {
+    background-color: rgb(4, 156, 155);
     display: flex;
     align-items: center;
-    padding-right: 1rem;
+   
   }
 
   @media screen and (min-width: 830px) {
@@ -86,9 +92,10 @@
       top: 0;
       right: 0;
       position: fixed;
-      background-color: var(--fondo-header);
+      background-color: rgb(4, 156, 155);
       z-index: 30;
       width: 100%;
+      height: 100px;
       padding-bottom: 1rem;
     }
   }
@@ -190,7 +197,7 @@
     top: 0;
     width: 100%;
     background: white;
-    height: 100%;
+
     z-index: 10;
     display: flex;
     justify-content: center;
@@ -204,6 +211,7 @@
       width: initial;
       height: initial;
       flex: 1;
+
       margin-right: 3rem;
     }
   }
@@ -211,8 +219,8 @@
   .menu {
     text-align: center;
     font-size: 1.5rem;
+    height: 60px;
     display: grid;
-
     grid-template-rows: repeat(5, 3rem);
     list-style: none;
     margin-top: 0;
@@ -271,6 +279,7 @@
   @media screen and (min-width: 830px) {
     .nav {
       display: flex;
+      width: 120%;
       align-items: flex-end;
       justify-content: flex-end;
       border-bottom: 2px solid gray;

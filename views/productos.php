@@ -16,7 +16,7 @@
     <main class="main__productos">
         <h1 class="productos__titulo">Nuestros productos</h1>
         <section class="productos__multimedia">
-            <video class="productos__video" src="../public/videos/video__productos.mp4" autoplay="autoplay"
+            <video class="productos__video" src="../public/videos/video__productos1.mp4" autoplay="autoplay"
                 muted="muted" loop="loop"></video>
         </section>
         <section class="productos__catalogo" id="catalogo1">

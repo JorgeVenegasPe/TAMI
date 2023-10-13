@@ -20,14 +20,53 @@
   }
 }
 
+
+
 .panel {
   text-align: center;
-  background-image: url("../images/logo.webp");
+  background-image: url("../images/PORTADA.webp");
   color: white;
   background-size: cover;
   background-position: center;
-  height: 550px;
+  height: 560px;
   position: relative;
+}
+
+.redes{
+  background-color: rgb(4, 156, 155);
+  height: 80px;
+}
+
+.redes__sociales {
+ display: flex;
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: auto;
+  font-size: var(--fontsize-small);
+  justify-items: center;
+  align-items: center;
+}
+
+.redes_icon{
+  align-items: center;
+  justify-content: center;
+  margin: 22px 0px 60px  60px;
+  font-size: 25px;
+  
+}
+.iconos{
+  color: white;
+  font-size: 50px;
+
+}
+
+.nombre_producto{
+  font-weight: bold;
+  align-items: center;
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 0px;
 }
 
 @media screen and (min-width: 830px) {
@@ -126,7 +165,7 @@
   animation: panel 3s 2s 1 forwards;
   text-align: center;
   background-color: var(--color-botones);
-  color: white;
+  color: black;
   width: 8rem;
   padding: .4rem;
   position: absolute;
@@ -152,8 +191,9 @@
 
 .panel__link {
   text-decoration: none;
-  color: white;
+  color: black;
   display: block;
+  font-weight: bold;
 }
 
 .productos {
@@ -173,8 +213,16 @@
 
 .productos__img {
   width: 55%;
+  width: 27%;
   background-color: white;
-  border-bottom: 5px solid var(--color-prymario);
+
+}
+
+.productos__img1 {
+  width: 55%;
+  width: 26%;
+  background-color: white;
+
 }
 
 @media screen and (min-width: 440px) {
