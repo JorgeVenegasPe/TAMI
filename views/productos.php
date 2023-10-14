@@ -229,7 +229,7 @@
                                             <button class="btn-counter" id="decrement">-</button>
                                         </div>
                                         <div class="counter-cell">
-                                            <span id="count">0</span>
+                                            <span id="count">1</span>
                                         </div>
                                         <div class="counter-cell">
                                             <button class="btn-counter" id="increment">+</button>
@@ -432,11 +432,13 @@
     const decrementButton = document.getElementById("decrement");
     const countElement = document.getElementById("count");
     const incrementButton = document.getElementById("increment");
-    let count = 0;
+    let count = 1;
 
     decrementButton.addEventListener("click", function () {
-        count--;
-        updateCount();
+        if (count > 1) {
+            count--;
+            updateCount();
+        }
     });
 
     incrementButton.addEventListener("click", function () {
