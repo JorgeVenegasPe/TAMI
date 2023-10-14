@@ -176,8 +176,18 @@
                     <div class="modal-content">
                         <span class="close" onclick="closeModal('maquina__selladora')">X</span>
                         <div class="product-details">
-                            <img src="../public/images/catalogo_productos/selladora2.png" alt="SELLADORA" />
-
+                            <div class="product-images">
+                                <img class="principal-img" src=""/>
+                                <div class="product-thumbnails">
+                                    <img src="../public/images/catalogo_productos/selladora2.png" alt="Thumbnail 2" onclick="changeImage(this)"/>
+                                    <img src="../public/images/catalogo_productos/embalaje2.png" alt="Thumbnail 1" onclick="changeImage(this)"/>
+                                    <img src="../public/images/catalogo_productos/sellador_vasos2.png" alt="Thumbnail 3" onclick="changeImage(this)"/>
+                                    <img src="../public/images/catalogo_productos/Selladora-de-bolsas.webp" alt="Thumbnail 4" onclick="changeImage(this)"/>
+                                    <img src="../public/images/catalogo_productos/WPC WALLPANEL.png" alt="Thumbnail 4" onclick="changeImage(this)"/>
+                                    <!-- Agrega más miniaturas aquí según sea necesario -->
+                                </div>
+                            </div>
+                        
                             <div class="product-info">
                                 <h2 class="pro_titulo">Máquina selladora de botellas manual</h2>
                                 <div class="pro-opinion">
@@ -449,5 +459,30 @@
     function updateCount() {
         countElement.innerText = count;
     }
+    });
+    function changeImage(thumbnail) {
+    // Obtener la URL de la miniatura clicada
+    var newImageSrc = thumbnail.src;
+    
+    // Obtener la imagen principal
+    var mainImage = document.querySelector('.principal-img');
+
+    // Cambiar la imagen principal por la miniatura seleccionada
+    mainImage.src = newImageSrc;
+
+     // Remover la clase 'selected' de todos los Thumbnails
+     var thumbnails = document.querySelectorAll('.product-thumbnails img');
+    thumbnails.forEach(function (thumb) {
+        thumb.classList.remove('selected');
+    });
+
+    // Agregar la clase 'selected' al Thumbnail seleccionado
+    thumbnail.classList.add('selected');
+}
+
+// Al inicio, muestra el primer Thumbnail en la imagen principal
+window.addEventListener('DOMContentLoaded', function() {
+    var firstThumbnail = document.querySelector('.product-thumbnails img');
+    changeImage(firstThumbnail);
 });
     </script>
