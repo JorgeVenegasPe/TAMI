@@ -174,16 +174,69 @@
                 <!-- Modal para el segundo elemento -->
                 <div id="maquina__selladora_modal" class="modal">
                     <div class="modal-content">
-                        <span class="close" onclick="closeModal('maquina__selladora')">Cerrar</span>
+                        <span class="close" onclick="closeModal('maquina__selladora')">X</span>
                         <div class="product-details">
                             <img src="../public/images/catalogo_productos/selladora2.png" alt="SELLADORA" />
+
                             <div class="product-info">
-                                <h2 class="pro_titulo">Máquina selladora de botellas manual:</h2>
-
-                                <p> <samp class="sub_titulo"> Industrias aplicables:</samp> Planta de fabricación,
-                                    Fábrica de alimentos,
-                                    Comercio minorista, Tienda de alimentos y bebidas.</p>
-
+                                <h2 class="pro_titulo">Máquina selladora de botellas manual</h2>
+                                <div class="pro-opinion">
+                                    <div class="opinion-subcont">
+                                        <label>Valoracion: </label>
+                                        <span class="star" id="star-5">☆</span>
+                                        <span class="star" id="star-4">☆</span>
+                                        <span class="star" id="star-3">☆</span>
+                                        <span class="star" id="star-2">☆</span>
+                                        <span class="star" id="star-1">☆</span>
+                                    </div>
+                                    <div class="opinion-subcont">
+                                        <label>Comentarios: </label>
+                                        <span>39</span>
+                                    </div>
+                                </div>
+                                <div class="detalles">
+                                    <div class="detalles-subcont">
+                                        <label>Caracteristicas: </label>
+                                        <br>
+                                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor consectetur ipsum. Suspendisse molestie turpis et posuere varius. Pellentesque facilisis ex in ex faucibus, in egestas nulla consectetur. </span>
+                                    </div>
+                                    <div class="detalles-subcont">
+                                        <label>Dimensiones:</label>
+                                        <br>
+                                        <table class="custom-table">
+                                            <tr>
+                                                <td>Longitud</td>
+                                                <td>Ancho</td>
+                                                <td>Altura</td>
+                                            </tr>
+                                            <tr>
+                                                <td>200 cm</td>
+                                                <td>20 cm</td>
+                                                <td>5 cm</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div class="detalles-subcont">
+                                        <label>Mayor Información: </label>
+                                        <br>
+                                            <button class="btn-contactar">Contactar</button>
+                                            <button class="btn-faq">FAQ</button>                                            
+                                    </div>
+                                </div>
+                                <div class="calc-container">
+                                    <div class="counter">
+                                        <div class="counter-cell">
+                                            <button class="btn-counter" id="decrement">-</button>
+                                        </div>
+                                        <div class="counter-cell">
+                                            <span id="count">0</span>
+                                        </div>
+                                        <div class="counter-cell">
+                                            <button class="btn-counter" id="increment">+</button>
+                                        </div>
+                                    </div>
+                                    <button class="btn-cotizar">Cotizar</button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -374,4 +427,25 @@
         modal.style.display = "none";
         modal.classList.remove("show"); // Quita la clase "show" del modal
     }
+
+    document.addEventListener("DOMContentLoaded", function () {
+    const decrementButton = document.getElementById("decrement");
+    const countElement = document.getElementById("count");
+    const incrementButton = document.getElementById("increment");
+    let count = 0;
+
+    decrementButton.addEventListener("click", function () {
+        count--;
+        updateCount();
+    });
+
+    incrementButton.addEventListener("click", function () {
+        count++;
+        updateCount();
+    });
+
+    function updateCount() {
+        countElement.innerText = count;
+    }
+});
     </script>

@@ -197,30 +197,31 @@ h2 {
 /* Estilo del contenido del modal */
 .modal-content {
   background-color: #fff;
-  margin: 10% auto; 
+  margin: 5% auto; 
   padding: 20px;
   border-radius: 8px;
-  max-width: 600px;
+  max-width: 1000px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   position: relative;
   display: flex; 
-  align-items: center; 
+  align-items: center;
 }
 
 .product-details {
   display: flex; 
-  align-items: center; 
+  align-items: start; 
   justify-content: center;
 }
 
 .product-details img {
-  max-width: 50%; 
+  max-width: 70%; 
   margin-right: 20px; 
 }
 
 .product-info {
-  text-align: center;
-  flex-grow: 1; 
+  text-align: justify;
+  flex-grow: 1;
+  padding: 0 20px; 
 }
 
 /* Estilo del botón de cierre en el modal */
@@ -234,28 +235,148 @@ h2 {
   color: #555;
 }
 
-/* Estilo para el título del modal */
-.modal-content h2 {
-  font-size: 24px;
-  margin-top: 20px;
-  margin-bottom: 15px;
-}
 
 .pro_titulo {
-  color: var(--color-primario1);
-  font-weight: bold;
-  text-align: center; /* Centra el contenido horizontalmente */
+  text-transform: uppercase;
+  line-height: 95%;
+  color: var(--color-secundario2);
+  font-weight: 700;
+  font-size: 1.8rem;
+  font-family: "Montserrat", sans-serif;
+  text-align: start;
+  border-bottom: 1.5px solid var(--color-secundario2);
+  padding-bottom: 0.5rem;
+}
+.pro-opinion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color:var(--color-secundario2);
+}
+.star {
+  font-size: 20px; /* Ajusta el tamaño de las estrellas según tus preferencias */
+}
+.opinion-subcont{
+  display: flex;
+  align-items: center;
+}
+.opinion-subcont label{
+  margin-right: 10px;
+  font-size: 1.1rem;
+}
+.detalles{
+  margin: 1rem 2.5rem 0 2.5rem;
+}
+.detalles-subcont{
+  display: block;
+  margin-bottom: 1.5rem;
+}
+.detalles-subcont label{
+  font-size: 1rem;
+  font-weight: 800;
+}
+.detalles-subcont span{
+  font-size: 0.8rem;
 }
 
-.sub_titulo {
-  font-weight: bold;
-  color: black;
-  text-align: center; /* Centra el contenido horizontalmente */
+
+.custom-table {
+  margin-top: 0.5rem;
+  border-collapse: collapse;
+  width: 100%;
 }
+
+.custom-table, .custom-table tr, .custom-table td {
+  border: 1px solid var(--color-secundario2);
+  font-size: 0.8rem;
+}
+
+.custom-table tr:nth-child(1) {
+  background-color: var(--color-secundario2);
+  border: 1px solid white;
+  color: white;
+}
+.custom-table tr:nth-child(2) {
+  color: var(--color-secundario2);
+}
+
+.custom-table td {
+  padding: 8px;
+  text-align: center;
+}
+
+.btn-contactar{
+  margin: 0.5rem auto;
+  padding: 0.3rem 1rem;
+  background-color: var(--color-secundario2);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.btn-faq{
+  margin: 0.5rem auto;
+  padding: 0.3rem 1rem;
+  background-color: transparent;
+  color: var(--color-secundario2);
+  border: 1.5px solid var(--color-secundario2);
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.calc-container{
+  border-top:1.5px solid var(--color-secundario2);
+}
+.counter {
+  margin: 1.5rem 2.5rem 0.7rem 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.counter-cell {
+  height: 25px;
+  flex: 1;
+  text-align: center;
+  border: 1px solid var(--color-secundario2);
+  color: var(--color-secundario2);
+}
+
+.btn-counter {
+  font-size: 20px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: var(--color-secundario2);
+}
+
+#count {
+  font-size: 15px;
+  align-self: center;
+}
+.btn-cotizar{
+  width: 100%;
+  padding: 10px;
+  background-color: var(--color-secundario2);
+  color: white;
+  border: none;
+  border-radius: 3px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
 
 /* Estilo para la imagen del producto */
 .modal-content img {
-  max-width: 50%;
+  max-width: 55%;
   height: auto;
   border-radius: 6px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
