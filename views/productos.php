@@ -176,66 +176,121 @@
                             imgSrc: "../public/images/catalogo_productos/selladora2.png",
                             title: "Máquina selladora de botellas manual",
                             industries: "Industrias aplicables: ...",
+                            n_comments: "39",
+                            length: "200 cm",
+                            width: "20 cm",
+                            height: "5 cm",
+                            stars: 5,
                         },
                         {
                             id: "maquina__embalaje",
                             imgSrc: "../public/images/catalogo_productos/embalaje2.png",
                             title: "Máquina de embalaje",
                             industries: "Industrias aplicables:Alimentos y Bebidas de la fábrica, Restaurante, Venta al por menor, Tienda de alimentos.",
+                            n_comments: "24",
+                            length: "150 cm",
+                            width: "20 cm",
+                            height: "15 cm",
+                            stars: 3,
                         },
                         {
                             id: "sellador__vasos",
                             imgSrc: "../public/images/catalogo_productos/sellador_vasos2.png",
                             title: "Sellador de vasos",
                             industries: "Industrias aplicables: Hoteles en, Alimentos y Bebidas de fábrica, Alimentos y Bebidas de pequeños negocios.",
+                            n_comments: "33",
+                            length: "200 cm",
+                            width: "20 cm",
+                            height: "5 cm",
+                            stars: 4,
                         },
                         {
                             id: "Panel__Fibra",
                             imgSrc: "../public/images/catalogo_productos/BAMBO FIBER WALLBOARD1.png",
                             title: "Panel de Fibra de Bambo",
                             industries: "Industrias aplicables: Oficina; hotel; centro comercial; sala de estar, etc.",
+                            n_comments: "11",
+                            length: "200 cm",
+                            width: "20 cm",
+                            height: "5 cm",
+                            stars: 5,
                         },
                         {
                             id: "S__Botellas",
                             imgSrc: "../public/images/catalogo_productos/SBotellas-1_1.1.png",
                             title: "SBotellas 1_1",
                             industries: "Industrias aplicables: Planta de fabricación, Fábrica de alimentos, Comercio minorista, Tienda de alimentos y bebidas.",
+                            n_comments: "44",
+                            length: "200 cm",
+                            width: "20 cm",
+                            height: "5 cm",
+                            stars: 3,
                         },
                         {
                             id: "Selladora-de-bolsas",
                             imgSrc: "../public/images/catalogo_productos/Selladora-de-bolsas.webp",
                             title: "Selladora de bolsas",
                             industries: "Industrias aplicables: Alimentos y Bebidas de fábrica, Restaurante, Venta al por menor, Tienda de alimentos",
+                            n_comments: "27",
+                            length: "200 cm",
+                            width: "20 cm",
+                            height: "5 cm",
+                            stars: 4,
                         },
                         {
                             id: "Soldadora-LINGBA-5",
                             imgSrc: "../public/images/catalogo_productos/Soldadora-LINGBA-5.webp",
                             title: "Soldadora LINGBA 5",
                             industries: "Industrias aplicables: Material de construcción de Ɵendas, Reparación de maquinaria Ɵendas, Planta de fabricación.",
+                            n_comments: "35",
+                            length: "200 cm",
+                            width: "20 cm",
+                            height: "5 cm",
+                            stars: 4,
                         },
                         {
                             id: "Soldadora-SPARK-3",
                             imgSrc: "../public/images/catalogo_productos/Soldadora-SPARK-3.png",
                             title: "Soldadora SPARK 3",
                             industries: "Industrias aplicables: Material de construcción de Ɵendas, Reparación de maquinaria Ɵendas, Planta de fabricación.",
+                            n_comments: "46",
+                            length: "200 cm",
+                            width: "20 cm",
+                            height: "5 cm",
+                            stars: 5,
                         },
                         {
                             id: "Ventilador-Holografico",
                             imgSrc: "../public/images/catalogo_productos/Ventilador-Holografico.png",
                             title: "Ventilador Holográfico",
                             industries: "Industrias aplicables: Fiestas, eventos, reuniones sociales, creadores de contenido, markeƟng de empresas.",
+                            n_comments: "29",
+                            length: "200 cm",
+                            width: "20 cm",
+                            height: "5 cm",
+                            stars: 5,
                         },
                         {
                             id: "WPC__FENCEPANEL",
                             imgSrc: "../public/images/catalogo_productos/WPC FENCEPANEL.png",
                             title: "WPC FENCEPANEL",
                             industries: "Industrias aplicables: Oficina; hotel; centro comercial; sala de estar, etc.",
+                            n_comments: "30",
+                            length: "200 cm",
+                            width: "20 cm",
+                            height: "5 cm",
+                            stars: 4,
                         },
                         {
                             id: "WPC__WALLPANEL",
                             imgSrc: "../public/images/catalogo_productos/WPC WALLPANEL.png",
                             title: "WPC WALLPANEL",
                             industries: "Industrias aplicables: Oficina; hotel; centro comercial; sala de estar, etc.",
+                            n_comments: "10",
+                            length: "200 cm",
+                            width: "20 cm",
+                            height: "5 cm",
+                            stars: 5,
                         },
                     ];
                 
@@ -265,15 +320,11 @@
                                         <div class="pro-opinion">
                                             <div class="opinion-subcont">
                                                 <label>Valoracion: </label>
-                                                <span class="star" id="star-5">☆</span>
-                                                <span class="star" id="star-4">☆</span>
-                                                <span class="star" id="star-3">☆</span>
-                                                <span class="star" id="star-2">☆</span>
-                                                <span class="star" id="star-1">☆</span>
+                                                ${getStarsHTML(producto.stars)}
                                             </div>
                                             <div class="opinion-subcont">
                                                 <label>Comentarios: </label>
-                                                <span>39</span>
+                                                <span>${producto.n_comments}</span>
                                             </div>
                                         </div>
                                         <div class="detalles">
@@ -292,9 +343,9 @@
                                                         <td>Altura</td>
                                                     </tr>
                                                     <tr>
-                                                        <td>200 cm</td>
-                                                        <td>20 cm</td>
-                                                        <td>5 cm</td>
+                                                        <td>${producto.length}</td>
+                                                        <td>${producto.width}</td>
+                                                        <td>${producto.height}</td>
                                                     </tr>
                                                 </table>
                                             </div>
@@ -330,6 +381,24 @@
                     productos.forEach((producto) => {
                         generarModal(producto);
                     });
+                    function getStarsHTML(stars) {
+                    const starHTML = '<span class="star">★</span>'; // Una sola estrella
+                    const emptyStarHTML = '<span class="star empty">☆</span>'; // Una sola estrella vacía
+                    let starsHTML = '';
+                    count_stars = 0;
+
+                    // Agregar la cantidad correcta de estrellas
+                    for (let i = 0; i < stars; i++) {
+                        starsHTML += starHTML;
+                        count_stars++;
+                    }
+                    if (count_stars < 5) {
+                        for (let i = 0; i < (5 - count_stars); i++) {
+                            starsHTML += emptyStarHTML;
+                        }
+                    }
+                    return starsHTML;
+                    }
                 </script>
 
         </section>
