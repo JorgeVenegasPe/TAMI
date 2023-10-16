@@ -222,12 +222,32 @@ h2 {
 /* Estilo del botón de cierre en el modal */
 .close {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 5px;
+  right: 5px;
   font-size: 20px;
   font-weight: bold;
   cursor: pointer;
-  color: #555;
+  color: var(--color-secundario2);
+  transition: 0.3s ease;
+  border-radius: 50%;
+  background-color: white;
+  padding: 0px 8.5px 5px 8.5px;
+  box-shadow: 0px 4px 8px rgba(0, 107, 121, 0.5);
+}
+.tami-banner{
+  position: absolute;
+  top:0px;
+  right: 40px;
+  width: 50px;
+  height: 60px;
+  background-color: var(--color-secundario2);
+  clip-path: polygon(100% 0, 100% 100%, 50% 80%, 0 100%, 0 0);
+  transition: 0.3s ease;
+}
+.tami-banner img{
+  width: 80%;
+  height: 90%;
+  object-fit: cover;
 }
 
 
@@ -416,6 +436,26 @@ h2 {
   color: #333;
   margin-top: 15px;
 }
+
+.image-container {
+  position: relative;
+}
+.heart-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 16px;
+  color: var(--color-secundario2); /* Cambia el color del corazón según tus preferencias */
+  cursor: pointer;
+  /*poner un circulo alrededor*/
+  border-radius: 50%;
+  background-color: white;
+  padding: 8px;
+  box-shadow: 2px 4px 8px rgba(0, 107, 121, 0.5);
+
+}
+
+
 
 /* Estilo para animar la apertura del modal */
 .modal.fade-in {

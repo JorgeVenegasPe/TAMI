@@ -301,10 +301,16 @@
                         modal.classList.add("modal");
                         modal.innerHTML = `
                             <div class="modal-content">
-                                <span class="close" onclick="closeModal('${producto.id}')">X</span>
+                                <span class="close" onclick="closeModal('${producto.id}')">x</span>
+                                <div class="tami-banner">
+                                    <img src="../public/images/TAMI LOGO transparente.png" alt="TAMI LOGO">
+                                </div>
                                 <div class="product-details">
                                     <div class="product-images">
-                                        <img class="principal-img" src="${producto.imgSrc}"/>
+                                        <div class="image-container">
+                                          <img class="principal-img" src="${producto.imgSrc}" />
+                                          <i class="far fa-heart heart-icon"></i>
+                                        </div>
                                         <div class="product-thumbnails">
                                             <img src="${producto.imgSrc}" alt="Thumbnail 1" onclick="changeImage(this)"/>
                                             <img src="../public/images/no-photo.jpg" alt="Thumbnail 2" onclick="changeImage(this)"/>
@@ -399,6 +405,19 @@
                     }
                     return starsHTML;
                     }
+                    function toggleHeartIcon(icon) {
+                      // Alterna las clases de Font Awesome para cambiar el ícono
+                      icon.classList.toggle("far"); // Alternar el ícono vacío
+                      icon.classList.toggle("fas"); // Alternar el ícono sólido
+                    }
+
+                    // Obtén la etiqueta del ícono del corazón
+                    const heartIcon = document.querySelector(".heart-icon");
+
+                    // Agrega un controlador de eventos de clic al ícono del corazón
+                    heartIcon.addEventListener("click", function () {
+                      toggleHeartIcon(heartIcon);
+                    });
                 </script>
 
         </section>
