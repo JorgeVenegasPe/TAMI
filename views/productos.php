@@ -22,153 +22,154 @@
         <section class="productos__catalogo" id="catalogo1">
             <h2 class="productos__tituloCatalogo" id="productos__tituloCatalogo">Catálogo</h2>
 
-            <div class="productos__imagenes">
+            <div style="padding: 10px;">
+                <h2 style="padding: 20px 80px 20px 80px; color: white;" >Emprendimiento</h2>
+                <div class="productos__imagenes">
+                    <!-- 1 -->
+                    <figure class="productos__item" id="S__Botellas">
+                        <a href="#productos__tituloCatalogo" class="productos__link1">
+                            <img class="productos__img" src="../public/images/catalogo_productos/SBotellas-1_1.1.png"
+                                alt="SBotellas 1_1" /></a>
+                            Sellador de Botellas
 
+                        <figcaption class="productos__description">
+                            <a href="#productos__tituloCatalogo" class="productos__link2"
+                                onclick="openModal('S__Botellas')">Vista rápida</a>
+                        </figcaption>
+                    </figure>
 
-                <!-- 1 -->
-                <figure class="productos__item" id="maquina__selladora">
-                    <a href="#productos__tituloCatalogo" class="productos__link1">
-                        <img class="productos__img" src="../public/images/catalogo_productos/selladora2.png"
-                            alt="SELLADORA" /></a>
-                    Máquina selladora de botellas manual
+                    <!-- 2 -->
+                    <figure class="productos__item" id="maquina__embalaje">
+                        <a href="#productos__tituloCatalogo" class="productos__link1">
+                            <img class="productos__img" src="../public/images/catalogo_productos/embalaje2.png"
+                                alt="emabalaje" />
+                        </a>
+                        Máquina de embalaje
+                        <figcaption class="productos__description">
+                            <a href="#productos__tituloCatalogo" class="productos__link2"
+                                onclick="openModal('maquina__embalaje')">Vista rápida</a>
+                        </figcaption>
+                    </figure>
 
-                    <figcaption class="productos__description">
-                        <a href="#productos__tituloCatalogo" class="productos__link2"
-                            onclick="openModal('maquina__selladora')">Vista rápida</a>
-                    </figcaption>
-                </figure>
+                    <!-- 3-->
+                    <figure class="productos__item" id="sellador__vasos">
+                        <a href="#productos__tituloCatalogo" class="productos__link1">
+                            <img class="productos__img" src="../public/images/catalogo_productos/sellador_vasos2.png"
+                                alt="SELLADOR VASOS" /></a>
+                        Sellador de vasos
 
-                <!-- 2 -->
-                <figure class="productos__item" id="maquina__embalaje">
-                    <a href="#productos__tituloCatalogo" class="productos__link1">
-                        <img class="productos__img" src="../public/images/catalogo_productos/embalaje2.png"
-                            alt="emabalaje" />
-                    </a>
-                    Máquina de embalaje
-                    <figcaption class="productos__description">
-                        <a href="#productos__tituloCatalogo" class="productos__link2"
-                            onclick="openModal('maquina__embalaje')">Vista rápida</a>
-                    </figcaption>
-                </figure>
+                        <figcaption class="productos__description">
+                            <a href="#productos__tituloCatalogo" class="productos__link2"
+                                onclick="openModal('sellador__vasos')">Vista rápida</a>
+                        </figcaption>
+                    </figure>
 
-                <!-- 3-->
-                <figure class="productos__item" id="sellador__vasos">
-                    <a href="#productos__tituloCatalogo" class="productos__link1">
-                        <img class="productos__img" src="../public/images/catalogo_productos/sellador_vasos2.png"
-                            alt="SELLADOR VASOS" /></a>
-                    Sellador de vasos
+                    <!-- 6 -->
+                    <figure class="productos__item" id="Selladora-de-bolsas">
+                        <a href="#productos__tituloCatalogo" class="productos__link1">
+                            <img class="productos__img" src="../public/images/catalogo_productos/Selladora-de-bolsas.webp"
+                                alt="Selladora-de-bolsas" /></a>
+                        Selladora de bolsas
 
-                    <figcaption class="productos__description">
-                        <a href="#productos__tituloCatalogo" class="productos__link2"
-                            onclick="openModal('sellador__vasos')">Vista rápida</a>
-                    </figcaption>
-                </figure>
+                        <figcaption class="productos__description">
+                            <a href="#productos__tituloCatalogo" class="productos__link2"
+                                onclick="openModal('Selladora-de-bolsas')">Vista rápida</a>
+                        </figcaption>
+                    </figure>
+                   
+                </div>
+            </div>
+        
+            <div style="padding: 10px;">
+                <h2 style="padding: 20px 80px 20px 80px; color: white;" >Trabajo</h2>
+                <div class="productos__imagenes">
 
-                <!-- 4 -->
-                <figure class="productos__item" id="Panel__Fibra">
-                    <a href="#productos__tituloCatalogo" class="productos__link1">
-                        <img class="productos__img" src="../public/images/catalogo_productos/BAMBO FIBER WALLBOARD1.png"
-                            alt="Panel Fibra" /></a>
-                    Panel de Fibra de Bambo
+                    <!-- 7 -->
+                    <figure class="productos__item" id="Soldadora-LINGBA-5">
+                        <a href="#productos__tituloCatalogo" class="productos__link1">
+                            <img class="productos__img" src="../public/images/catalogo_productos/Soldadora-LINGBA-5.webp"
+                                alt="Soldadora-LINGBA-5" /></a>
+                        Soldadora LINGBA 5
 
-                    <figcaption class="productos__description">
-                        <a href="#productos__tituloCatalogo" class="productos__link2"
-                            onclick="openModal('Panel__Fibra')">Vista rápida</a>
-                    </figcaption>
-                </figure>
+                        <figcaption class="productos__description">
+                            <a href="#productos__tituloCatalogo" class="productos__link2"
+                                onclick="openModal('Soldadora-LINGBA-5')">Vista rápida</a>
+                        </figcaption>
+                    </figure>
+                    
+                    <!-- 8 -->
+                    <figure class="productos__item" id="Soldadora-SPARK-3">
+                        <a href="#productos__tituloCatalogo" class="productos__link1">
+                            <img class="productos__img" src="../public/images/catalogo_productos/Soldadora-SPARK-3.png"
+                                alt="Soldadora-SPARK-3" /></a>
+                        Soldadora SPARK 3
 
-                <!-- 5 -->
-                <figure class="productos__item" id="S__Botellas">
-                    <a href="#productos__tituloCatalogo" class="productos__link1">
-                        <img class="productos__img" src="../public/images/catalogo_productos/SBotellas-1_1.1.png"
-                            alt="SBotellas 1_1" /></a>
-                    SBotellas 1_1
+                        <figcaption class="productos__description">
+                            <a href="#productos__tituloCatalogo" class="productos__link2"
+                                onclick="openModal('Soldadora-SPARK-3')">Vista rápida</a>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
 
-                    <figcaption class="productos__description">
-                        <a href="#productos__tituloCatalogo" class="productos__link2"
-                            onclick="openModal('S__Botellas')">Vista rápida</a>
-                    </figcaption>
-                </figure>
+            <div style="padding: 10px;">
+                <h2 style="padding: 20px 80px 20px 80px; color: white;" >Decoración</h2>
+                <div class="productos__imagenes">
 
-                <!-- 6 -->
-                <figure class="productos__item" id="Selladora-de-bolsas">
-                    <a href="#productos__tituloCatalogo" class="productos__link1">
-                        <img class="productos__img" src="../public/images/catalogo_productos/Selladora-de-bolsas.webp"
-                            alt="Selladora-de-bolsas" /></a>
-                    Selladora de bolsas
+                    <!-- 4 -->
+                    <figure class="productos__item" id="Panel__Fibra">
+                        <a href="#productos__tituloCatalogo" class="productos__link1">
+                            <img class="productos__img" src="../public/images/catalogo_productos/BAMBO FIBER WALLBOARD1.png"
+                                alt="Panel Fibra" /></a>
+                        Panel de Fibra de Bambo
 
-                    <figcaption class="productos__description">
-                        <a href="#productos__tituloCatalogo" class="productos__link2"
-                            onclick="openModal('Selladora-de-bolsas')">Vista rápida</a>
-                    </figcaption>
-                </figure>
+                        <figcaption class="productos__description">
+                            <a href="#productos__tituloCatalogo" class="productos__link2"
+                                onclick="openModal('Panel__Fibra')">Vista rápida</a>
+                        </figcaption>
+                    </figure>
 
-                <!-- 7 -->
-                <figure class="productos__item" id="Soldadora-LINGBA-5">
-                    <a href="#productos__tituloCatalogo" class="productos__link1">
-                        <img class="productos__img" src="../public/images/catalogo_productos/Soldadora-LINGBA-5.webp"
-                            alt="Soldadora-LINGBA-5" /></a>
-                    Soldadora LINGBA 5
+                    <!-- 9-->
+                    <figure class="productos__item" id="Ventilador-Holografico">
+                        <a href="#productos__tituloCatalogo" class="productos__link1">
+                            <img class="productos__img" src="../public/images/catalogo_productos/Ventilador-Holografico.png"
+                                alt="Ventilador-Holografico" /></a>
+                        Ventilador Holográfico
 
-                    <figcaption class="productos__description">
-                        <a href="#productos__tituloCatalogo" class="productos__link2"
-                            onclick="openModal('Soldadora-LINGBA-5')">Vista rápida</a>
-                    </figcaption>
-                </figure>
+                        <figcaption class="productos__description">
+                            <a href="#productos__tituloCatalogo" class="productos__link2"
+                                onclick="openModal('Ventilador-Holografico')">Vista rápida</a>
+                        </figcaption>
+                    </figure>
 
-                <!-- 8 -->
-                <figure class="productos__item" id="Soldadora-SPARK-3">
-                    <a href="#productos__tituloCatalogo" class="productos__link1">
-                        <img class="productos__img" src="../public/images/catalogo_productos/Soldadora-SPARK-3.png"
-                            alt="Soldadora-SPARK-3" /></a>
-                    Soldadora SPARK 3
+                    <!-- 10-->
+                    <figure class="productos__item" id="WPC__FENCEPANEL">
+                        <a href="#productos__tituloCatalogo" class="productos__link1">
+                            <img class="productos__img" src="../public/images/catalogo_productos/WPC FENCEPANEL.png"
+                                alt="WPC__FENCEPANEL" /></a>
+                        WPC FENCEPANEL
 
-                    <figcaption class="productos__description">
-                        <a href="#productos__tituloCatalogo" class="productos__link2"
-                            onclick="openModal('Soldadora-SPARK-3')">Vista rápida</a>
-                    </figcaption>
-                </figure>
+                        <figcaption class="productos__description">
+                            <a href="#productos__tituloCatalogo" class="productos__link2"
+                                onclick="openModal('WPC__FENCEPANEL')">Vista rápida</a>
+                        </figcaption>
+                    </figure>
 
-                <!-- 9-->
-                <figure class="productos__item" id="Ventilador-Holografico">
-                    <a href="#productos__tituloCatalogo" class="productos__link1">
-                        <img class="productos__img" src="../public/images/catalogo_productos/Ventilador-Holografico.png"
-                            alt="Ventilador-Holografico" /></a>
-                    Ventilador Holográfico
+                    <!-- 11-->
+                    <figure class="productos__item" id="WPC__WALLPANEL">
+                        <a href="#productos__tituloCatalogo" class="productos__link1">
+                            <img class="productos__img" src="../public/images/catalogo_productos/WPC WALLPANEL.png"
+                                alt="WPC__WALLPANEL" /></a>
+                        WPC__WALLPANEL
 
-                    <figcaption class="productos__description">
-                        <a href="#productos__tituloCatalogo" class="productos__link2"
-                            onclick="openModal('Ventilador-Holografico')">Vista rápida</a>
-                    </figcaption>
-                </figure>
-
-                <!-- 10-->
-                <figure class="productos__item" id="WPC__FENCEPANEL">
-                    <a href="#productos__tituloCatalogo" class="productos__link1">
-                        <img class="productos__img" src="../public/images/catalogo_productos/WPC FENCEPANEL.png"
-                            alt="WPC__FENCEPANEL" /></a>
-                    WPC FENCEPANEL
-
-                    <figcaption class="productos__description">
-                        <a href="#productos__tituloCatalogo" class="productos__link2"
-                            onclick="openModal('WPC__FENCEPANEL')">Vista rápida</a>
-                    </figcaption>
-                </figure>
-
-                <!-- 11-->
-                <figure class="productos__item" id="WPC__WALLPANEL">
-                    <a href="#productos__tituloCatalogo" class="productos__link1">
-                        <img class="productos__img" src="../public/images/catalogo_productos/WPC WALLPANEL.png"
-                            alt="WPC__WALLPANEL" /></a>
-                    WPC__WALLPANEL
-
-                    <figcaption class="productos__description">
-                        <a href="#productos__tituloCatalogo" class="productos__link2"
-                            onclick="openModal('WPC__WALLPANEL')">Vista rápida</a>
-                    </figcaption>
-                </figure>
-
-                <div id="modalContainer"></div>
+                        <figcaption class="productos__description">
+                            <a href="#productos__tituloCatalogo" class="productos__link2"
+                                onclick="openModal('WPC__WALLPANEL')">Vista rápida</a>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div id="modalContainer"></div>
                 <script>
                     const productos = [
                         {
@@ -419,7 +420,6 @@
                       toggleHeartIcon(heartIcon);
                     });
                 </script>
-
         </section>
     </main>
     <?php include_once "footer.php"; ?>
@@ -491,10 +491,9 @@
     thumbnail.classList.add('selected');
 }
 
-
 // Al inicio, muestra el primer Thumbnail en la imagen principal
 window.addEventListener('DOMContentLoaded', function() {
     var firstThumbnail = document.querySelector('.product-thumbnails img');
     changeImage(firstThumbnail);
 });
-    </script>
+</script>

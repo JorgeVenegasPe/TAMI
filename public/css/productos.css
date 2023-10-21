@@ -250,6 +250,40 @@ h2 {
 .tami-banner img{
   width: 80%;
   height: 90%;
+.product-info {
+  text-align: justify;
+  flex-grow: 1;
+  padding: 0 20px; 
+}
+
+/* Estilo del botón de cierre en el modal */
+.close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  color: var(--color-secundario2);
+  transition: 0.3s ease;
+  border-radius: 50%;
+  background-color: white;
+  padding: 0px 8.5px 5px 8.5px;
+  box-shadow: 0px 4px 8px rgba(0, 107, 121, 0.5);
+}
+.tami-banner{
+  position: absolute;
+  top:0px;
+  right: 40px;
+  width: 50px;
+  height: 60px;
+  background-color: var(--color-secundario2);
+  clip-path: polygon(100% 0, 100% 100%, 50% 80%, 0 100%, 0 0);
+  transition: 0.3s ease;
+}
+.tami-banner img{
+  width: 80%;
+  height: 90%;
   object-fit: cover;
 }
 
@@ -318,11 +352,48 @@ h2 {
   color: var(--color-secundario2);
 }
 
+.custom-table, .custom-table tr, .custom-table td {
+  border: 1px solid var(--color-secundario2);
+  font-size: 0.8rem;
+}
+
+.custom-table tr:nth-child(1) {
+  background-color: var(--color-secundario2);
+  border: 1px solid white;
+  color: white;
+}
+.custom-table tr:nth-child(2) {
+  color: var(--color-secundario2);
+}
+
+.custom-table td {
+  padding: 8px;
 .custom-table td {
   padding: 8px;
   text-align: center;
 }
 
+.btn-contactar{
+  margin: 0.5rem auto;
+  padding: 0.3rem 1rem;
+  background-color: var(--color-secundario2);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.btn-faq{
+  margin: 0.5rem auto;
+  padding: 0.3rem 1rem;
+  background-color: transparent;
+  color: var(--color-secundario2);
+  border: 1.5px solid var(--color-secundario2);
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: 600;
 .btn-contactar{
   margin: 0.5rem auto;
   padding: 0.3rem 1rem;
@@ -353,7 +424,22 @@ h2 {
 }
 .counter {
   margin: 1.5rem 2.5rem 0.7rem 2.5rem;
+.calc-container{
+  border-top:1.5px solid var(--color-secundario2);
+}
+.counter {
+  margin: 1.5rem 2.5rem 0.7rem 2.5rem;
   display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.counter-cell {
+  height: 25px;
+  flex: 1;
+  text-align: center;
+  border: 1px solid var(--color-secundario2);
+  color: var(--color-secundario2);
   align-items: center;
   justify-content: center;
 }
@@ -372,6 +458,12 @@ h2 {
   background: none;
   cursor: pointer;
   color: var(--color-secundario2);
+.btn-counter {
+  font-size: 20px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: var(--color-secundario2);
 }
 
 #count {
@@ -379,7 +471,14 @@ h2 {
   align-self: center;
 }
 .btn-cotizar{
+#count {
+  font-size: 15px;
+  align-self: center;
+}
+.btn-cotizar{
   width: 100%;
+  padding: 10px;
+  background-color: var(--color-secundario2);
   padding: 10px;
   background-color: var(--color-secundario2);
   color: white;
@@ -455,6 +554,21 @@ h2 {
   background-color: white;
   padding: 8px;
   box-shadow: 2px 4px 8px rgba(0, 107, 121, 0.5);
+.image-container {
+  position: relative;
+}
+.heart-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 16px;
+  color: var(--color-secundario2); /* Cambia el color del corazón según tus preferencias */
+  cursor: pointer;
+  /*poner un circulo alrededor*/
+  border-radius: 50%;
+  background-color: white;
+  padding: 8px;
+  box-shadow: 2px 4px 8px rgba(0, 107, 121, 0.5);
 
 }
 
@@ -468,6 +582,9 @@ h2 {
 /* Estilo para animar el cierre del modal */
 .modal.fade-out {
   animation: fadeOut 0.3s ease;
+/* Estilo para animar el cierre del modal */
+.modal.fade-out {
+  animation: fadeOut 0.3s ease;
 }
 
 /* Definición de las animaciones */
@@ -475,7 +592,26 @@ h2 {
   from {
     opacity: 0;
     transform: translateY(-20px);
+/* Definición de las animaciones */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
   }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-20px);
   to {
     opacity: 1;
     transform: translateY(0);
