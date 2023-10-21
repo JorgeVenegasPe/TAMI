@@ -179,6 +179,8 @@ h2 {
     color: black;
   }
 }
+/*Silene's work---------------------------------------------------------------------------*/
+
 
 .modal {
   display: none; /* Oculta el modal por defecto */
@@ -197,10 +199,11 @@ h2 {
 /* Estilo del contenido del modal */
 .modal-content {
   background-color: #fff;
-  margin: 5% auto; 
+  margin: 5% auto;
+  height: 70%; 
   padding: 30px 20px;
   border-radius: 8px;
-  max-width: 1000px;
+  max-width: 70%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   position: relative;
   display: flex; 
@@ -269,7 +272,7 @@ h2 {
   color:var(--color-secundario2);
 }
 .star {
-  font-size: 20px; /* Ajusta el tamaño de las estrellas según tus preferencias */
+  font-size: 20px;
 }
 .opinion-subcont{
   display: flex;
@@ -391,16 +394,16 @@ h2 {
 
 /* Estilo para la imagen del producto */
 .modal-content .product-images{
-  width: 50%;
-  min-width: 50%;
-  max-width: 50%;
+  width: 55%;
+  min-width: 55%;
+  max-width: 55%;
   height: auto;
   border-radius: 6px;
 }
 .principal-img{
   width: 100%;
-  max-height: 27rem;
-  min-height: 27rem;
+  max-height: 100%;
+  min-height: 100%;
   object-fit: cover;
   border-radius: 6px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);

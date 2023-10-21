@@ -80,13 +80,6 @@
     width: 173px;
   }
 }
-
-@media screen and (min-width:830px) {
-  .footer__whas {
-    width: 230px;
-  }
-}
-
 .footer__face {
   width: 94px;
 }
@@ -94,6 +87,9 @@
 @media screen and (min-width:830px) {
   .footer__face {
     width: 130px;
+  }
+  .footer__whas {
+    width: 230px;
   }
 }
 
@@ -110,8 +106,8 @@
 
 .icono__flotante {
   position: fixed;
-  width: 14%;
-  bottom: 2%;
+  width: 8%;
+  bottom: 4%;
   right: 4%;
   font-size: 2.5rem;
   display: block;
