@@ -179,8 +179,6 @@ h2 {
     color: black;
   }
 }
-/*Silene's work---------------------------------------------------------------------------*/
-
 
 .modal {
   display: none; /* Oculta el modal por defecto */
@@ -199,11 +197,10 @@ h2 {
 /* Estilo del contenido del modal */
 .modal-content {
   background-color: #fff;
-  margin: 5% auto;
-  height: 70%; 
+  margin: 5% auto; 
   padding: 30px 20px;
   border-radius: 8px;
-  max-width: 70%;
+  max-width: 1000px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   position: relative;
   display: flex; 
@@ -247,43 +244,12 @@ h2 {
   clip-path: polygon(100% 0, 100% 100%, 50% 80%, 0 100%, 0 0);
   transition: 0.3s ease;
 }
-.product-info {
-  text-align: justify;
-  flex-grow: 1;
-  padding: 0 20px; 
-}
-
-/* Estilo del botón de cierre en el modal */
-.close {
-  position: absolute;
-  top: 5px;
-  right: 5px;
-  font-size: 20px;
-  font-weight: bold;
-  cursor: pointer;
-  color: var(--color-secundario2);
-  transition: 0.3s ease;
-  border-radius: 50%;
-  background-color: white;
-  padding: 0px 8.5px 5px 8.5px;
-  box-shadow: 0px 4px 8px rgba(0, 107, 121, 0.5);
-}
-.tami-banner{
-  position: absolute;
-  top:0px;
-  right: 40px;
-  width: 50px;
-  height: 60px;
-  background-color: var(--color-secundario2);
-  clip-path: polygon(100% 0, 100% 100%, 50% 80%, 0 100%, 0 0);
-  transition: 0.3s ease;
-}
 .tami-banner img{
+  align-self: center;
   width: 80%;
   height: 90%;
   object-fit: cover;
 }
-
 
 .pro_titulo {
   text-transform: uppercase;
@@ -303,7 +269,7 @@ h2 {
   color:var(--color-secundario2);
 }
 .star {
-  font-size: 20px;
+  font-size: 20px; /* Ajusta el tamaño de las estrellas según tus preferencias */
 }
 .opinion-subcont{
   display: flex;
@@ -327,7 +293,6 @@ h2 {
 .detalles-subcont span{
   font-size: 0.8rem;
 }
-
 
 .custom-table {
   margin-top: 0.5rem;
@@ -395,9 +360,8 @@ h2 {
   text-align: center;
   border: 1px solid var(--color-secundario2);
   color: var(--color-secundario2);
-  align-items: center;
-  justify-content: center;
 }
+
 .btn-counter {
   font-size: 20px;
   border: none;
@@ -414,8 +378,6 @@ h2 {
   width: 100%;
   padding: 10px;
   background-color: var(--color-secundario2);
-  padding: 10px;
-  background-color: var(--color-secundario2);
   color: white;
   border: none;
   border-radius: 3px;
@@ -425,19 +387,18 @@ h2 {
   transition: 0.3s ease;
 }
 
-
 /* Estilo para la imagen del producto */
 .modal-content .product-images{
-  width: 55%;
-  min-width: 55%;
-  max-width: 55%;
+  width: 50%;
+  min-width: 50%;
+  max-width: 50%;
   height: auto;
   border-radius: 6px;
 }
 .principal-img{
   width: 100%;
-  max-height: 100%;
-  min-height: 100%;
+  max-height: 27rem;
+  min-height: 27rem;
   object-fit: cover;
   border-radius: 6px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -477,7 +438,6 @@ h2 {
 .image-container {
   position: relative;
 }
-
 .heart-icon {
   position: absolute;
   top: 10px;
@@ -490,8 +450,8 @@ h2 {
   background-color: white;
   padding: 8px;
   box-shadow: 2px 4px 8px rgba(0, 107, 121, 0.5);
-}
 
+}
 
 
 /* Estilo para animar la apertura del modal */
