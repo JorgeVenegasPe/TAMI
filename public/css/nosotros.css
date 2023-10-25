@@ -29,7 +29,7 @@ figure {
 
 @media screen and (min-width: 830px) {
   .main__nosotros {
-    margin-top: 7rem;
+    margin-top: 5.4rem;
   }
 }
 
@@ -52,7 +52,7 @@ figure {
 
 @keyframes nosotros__texto {
   from {
-    transform: translate(-100%);
+    transform: translate(-20%);
   }
 }
 
@@ -80,7 +80,7 @@ figure {
 
 @keyframes nosotros__titulo {
   from {
-    transform: translate(400%, -150%);
+    transform: translate(100%, -20%);
   }
 }
 
@@ -119,7 +119,7 @@ figure {
     position: absolute;
     top: 6%;
     opacity: 0;
-    transform: translate(100%);
+    transform: translate(50%);
     animation: nosotros__mision 2s 1s forwards;
   }
 }
@@ -134,7 +134,7 @@ figure {
 .nosotros__vision {
   margin-top: 2rem;
   opacity: 0;
-  transform: translate(100%);
+  transform: translate(50%);
   animation: nosotros__vision 2s 2.5s forwards;
 }
 
@@ -179,6 +179,7 @@ figure {
   .valores {
     display: flex;
     flex-direction: row;
+    padding: 10px;
   }
 }
 
@@ -221,7 +222,7 @@ figure {
 
   @keyframes valores__iconos {
     from {
-      transform: translate(120%);
+      transform: translate(80%);
     }
   }
 }
@@ -287,8 +288,7 @@ figure {
 }
 
 .certificaciones {
-  padding: 2rem;
-  padding-top: .2rem;
+  padding: 3rem;
   background-color: var(--color-botones);
 }
 
@@ -309,7 +309,7 @@ figure {
   @keyframes certificaciones__amimacion {
     from {
       opacity: 0;
-      transform: translate(100%);
+      transform: translate(20%);
     }
   }
 }
@@ -331,7 +331,7 @@ figure {
   @keyframes certificaciones__titulo {
     from {
       opacity: 0;
-      transform: translate(100%);
+      transform: translate(20%);
     }
   }
 }
@@ -347,6 +347,9 @@ figure {
 }
 
 .certificaciones__img {
+  padding: 20px;
+  background-color: white;
+  border-radius: 20px;
   width: 30%;
 }
 
@@ -364,12 +367,12 @@ figure {
 
 @media screen and (max-width: 430px) {
   p.nosotros__descripcion{
-    font-family: lato-light;
+    font-family: 'poppins', sans-serif;
   }
 }
 
 p.nosotros__descripcion{
-  font-weight: 600;
-  font-family: lato-light;
+  font-weight: 400;
+  margin-bottom: 20px;
 }
 

@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <link rel="icon" href="../public/images/TAMI LOGO transparente 2.png" type="image/x-icon">
+    <link rel="icon" href="../public/images/TAMILOGOtransparente.png" type="image/x-icon">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Productos | TAMI</title>
@@ -12,19 +12,16 @@
 </head>
 
 <body>
-    <?php include_once "menu.php"; ?>
+    <?php include_once "header.php"; ?>
     <main class="main__productos">
         <h1 class="productos__titulo">Nuestros productos</h1>
         <section class="productos__multimedia">
-            <video class="productos__video" src="../public/videos/video__productos.mp4" autoplay="autoplay"
-                muted="muted" loop="loop"></video>
+            <video class="productos__video" src="../public/videos/PRODUCTOSTAMI_1.mp4" autoplay="autoplay" muted="muted" loop="loop"></video>
         </section>
         <section class="productos__catalogo" id="catalogo1">
             <h2 class="productos__tituloCatalogo" id="productos__tituloCatalogo">Catálogo</h2>
 
             <div class="productos__imagenes">
-
-
                 <!-- 1 -->
                 <figure class="productos__item" id="maquina__selladora">
                     <a href="#productos__tituloCatalogo" class="productos__link1">
@@ -67,7 +64,7 @@
                 <!-- 4 -->
                 <figure class="productos__item" id="Panel__Fibra">
                     <a href="#productos__tituloCatalogo" class="productos__link1">
-                        <img class="productos__img" src="../public/images/catalogo_productos/BAMBO FIBER WALLBOARD1.png"
+                        <img class="productos__img" src="../public/images/catalogo_productos/BAMBOFIBERWALLBOARD1.png"
                             alt="Panel Fibra" /></a>
                     Panel de Fibra de Bambo
 
@@ -145,7 +142,7 @@
                 <!-- 10-->
                 <figure class="productos__item" id="WPC__FENCEPANEL">
                     <a href="#productos__tituloCatalogo" class="productos__link1">
-                        <img class="productos__img" src="../public/images/catalogo_productos/WPC FENCEPANEL.png"
+                        <img class="productos__img" src="../public/images/catalogo_productos/WPCFENCEPANEL.png"
                             alt="WPC__FENCEPANEL" /></a>
                     WPC FENCEPANEL
 
@@ -158,7 +155,7 @@
                 <!-- 11-->
                 <figure class="productos__item" id="WPC__WALLPANEL">
                     <a href="#productos__tituloCatalogo" class="productos__link1">
-                        <img class="productos__img" src="../public/images/catalogo_productos/WPC WALLPANEL.png"
+                        <img class="productos__img" src="../public/images/catalogo_productos/WPCWALLPANEL.png"
                             alt="WPC__WALLPANEL" /></a>
                     WPC__WALLPANEL
 
@@ -229,7 +226,7 @@
                     <div class="modal-content">
                         <span class="close" onclick="closeModal('Panel__Fibra')">Cerrar</span>
                         <div class="product-details">
-                            <img src="../public/images/catalogo_productos/BAMBO FIBER WALLBOARD1.png"
+                            <img src="../public/images/catalogo_productos/BAMBOFIBERWALLBOARD1.png"
                                 alt="Panel Fibra" />
                             <div class="product-info">
                                 <h2 class="pro_titulo">Panel de Fibra de Bambo</h2>
@@ -332,7 +329,7 @@
                     <div class="modal-content">
                         <span class="close" onclick="closeModal('WPC__FENCEPANEL')">Cerrar</span>
                         <div class="product-details">
-                        <img src="../public/images/catalogo_productos/WPC FENCEPANEL.png" alt="WPC FENCEPANEL" />
+                        <img src="../public/images/catalogo_productos/WPCFENCEPANEL.png" alt="WPC FENCEPANEL" />
                             <div class="product-info">
                                 <h2 class="pro_titulo">WPC FENCEPANEL</h2>
                                 <p> <samp class="sub_titulo"> Industrias aplicables:</samp>Oficina; hotel; centro comercial; sala de estar, etc. 
@@ -347,7 +344,7 @@
                     <div class="modal-content">
                         <span class="close" onclick="closeModal('WPC__WALLPANEL')">Cerrar</span>
                         <div class="product-details">
-                        <img src="../public/images/catalogo_productos/WPC WALLPANEL.png" alt="WPC WALLPANEL" />
+                        <img src="../public/images/catalogo_productos/WPCWALLPANEL.png" alt="WPC WALLPANEL" />
                             <div class="product-info">
                                 <h2 class="pro_titulo">WPC WALLPANEL</h2>
                                 <p> <samp class="sub_titulo"> Industrias aplicables:</samp>Oficina; hotel; centro comercial; sala de estar, etc</p>

@@ -29,7 +29,7 @@ figure {
 
 @media screen and (min-width: 830px) {
   .main__politicaEnvio {
-    margin-top: 7rem;
+    margin-top: 5.4rem;
   }
 }
 
@@ -183,14 +183,12 @@ figure {
 }
 
 .politica__provinciaT {
-  font-family: lato-light;
   font-weight: 300;
   margin-left: 2rem;
   display: flex;
 }
 
 .politica__lugares {
-  font-family: lato-light;
   font-weight: 300;
   margin-left: 3rem;
 }
@@ -216,7 +214,6 @@ figure {
 
 .margin1 {
   margin-left: -2.5px;
-  font-family: lato-light;
   font-weight: 600;
 }
 
@@ -228,7 +225,6 @@ figure {
 
 .margin2 {
   margin-left: 10px;
-  font-family: lato-light;
   font-weight: 600;
 }
 
@@ -239,7 +235,6 @@ figure {
 }
 
 .margin3 {
-  font-family: lato-light;
   font-weight: 600;
   margin-left: 1px;
 }

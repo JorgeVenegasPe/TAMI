@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<link rel="icon" href="../public/images/TAMI LOGO transparente 2.png" type="image/x-icon">
+<link rel="icon" href="../public/images/TAMILOGOtransparente.png" type="image/x-icon">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Nosotros | TAMI</title>
 <link rel="stylesheet" type="text/css" href="../public/css/menu.css" >
@@ -10,23 +10,23 @@
 <link rel="stylesheet" type="text/css" href="../public/css/nosotros.css" >
 </head>
 <body>
-  <?php include_once "menu.php";?>
+  <?php include_once "header.php";?>
   <main class="main__nosotros">
     <section class="nosotros">
       <div class="nosotros__texto">
         <h2 class="nosotros__titulo">Nosotros</h2>
-        <h3 class="nosotros__subtitulo">MISIÓN</h3>
-        <p class="nosotros__descripcion">Somos una empresa que busca brindar soluciones innovadoras, mediante la comercialización de productos prácticos de desinfección del ambiente; y ayudar a tu negocio en el día a día, brindando un servicio de calidad desde la recepción del pedido hasta la entrega final.</p>
-        <h3 class="nosotros__subtitulo">VISIÓN</h3>
-        <p class="nosotros__descripcion">Ser una empresa líder a nivel nacional con una amplia gama de productos que sean de alta utilidad para nuestros clientes, orientados a la satisfacción de sus necesidades y al cumplimiento de los estándares de calidad en nuestros productos.</p>
+        <h3 style="text-align: center;" class="nosotros__subtitulo">MISIÓN</h3>
+        <p class="nosotros__descripcion">Somos una empresa que busca ayudar en tu negocio, mediante la comercialización de productos para emprendimiento, trabajo y decoración; brindando un servicio de calidad desde la recepción del pedido hasta la entrega final.</p>
+        <h3 style="text-align: center;" class="nosotros__subtitulo">VISIÓN</h3>
+        <p class="nosotros__descripcion">En Tami, aspiramos ser una empresa líder a nivel nacional con una amplia gama de productos altamente útiles para el negocio, cumpliendo con los estándares de calidad, donde la utilidad y la satisfacción del cliente sean nuestra mayor prioridad, impulsando cada día nuestras acciones y decisiones.</p>
       </div>
       <div class="nosotros__imagenes">
-        <figure class="nosotros__mision"><img class="nosotros__img" src="../public/images/mision_vision/mision.jpg" alt="misión de la empresa"/></figure>
-        <figure class="nosotros__vision"><img class="nosotros__img" src="../public/images/mision_vision/vision.jpg" alt="visión de la empresa"/></figure>
+        <figure class="nosotros__mision"><img class="nosotros__img" src="../public/images/mision_vision/Compromiso.jpg" alt="misión de la empresa"/></figure>
+        <figure class="nosotros__vision"><img class="nosotros__img" src="../public/images/mision_vision/EQUIPOS.jpg" alt="visión de la empresa"/></figure>
       </div>
     </section>
     <section class="valores">
-      <figure class="valores__header"><img class="valores__img" src="../public/images/valores/imagen_valores.jpg" alt=""/></figure>
+      <figure class="valores__header"><img class="valores__img" src="../public/images/mision_vision/PWReunión.jpg" alt=""/></figure>
       <div class="valores__iconos" id="valores__iconos">
         <h2 class="valores__titulo">Nuestros valores</h2>
         <div class="valores__imagenes">

@@ -134,13 +134,11 @@
 
 .contacto__texto {
   font-weight: 600;
-  font-family: lato-light;
   text-align: center;
   font-size: var(--fontsize-normal);
 }
 
 .footer__sociales1 {
-  font-family: lato-light;
   font-weight: 600;
   margin-top: 0;
   margin-bottom: 0;
