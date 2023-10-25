@@ -189,11 +189,10 @@ h2 {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro semi-transparente */
   backdrop-filter: blur(10px);
-  z-index: 999999;
+  z-index: 30;
   overflow: auto;
   transition: 0.3s ease;
 }
-
 /* Estilo del contenido del modal */
 .modal-content {
   background-color: #fff;
@@ -246,6 +245,9 @@ h2 {
 }
 .tami-banner img{
   align-self: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   width: 80%;
   height: 90%;
   object-fit: cover;

@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="../public/css/menu.css">
     <link rel="stylesheet" type="text/css" href="../public/css/footer.css">
     <link rel="stylesheet" type="text/css" href="../public/css/productos.css">
+    <link rel="stylesheet" type="text/css" href="../public/css/formulario.css">
 </head>
 
 <body>
@@ -169,6 +170,7 @@
                     </figure>
                 </div>
             </div>
+            <div id="modalForm"></div>
             <div id="modalContainer"></div>
                 <script>
                     const productos = [
@@ -292,6 +294,7 @@
                             width: "20 cm",
                             height: "5 cm",
                             stars: 5,
+                            cantidad: 1,
                         },
                     ];
                 
@@ -375,7 +378,7 @@
                                                     <button class="btn-counter" id="increment">+</button>
                                                 </div>
                                             </div>
-                                            <button class="btn-cotizar">Cotizar</button>
+                                            <button class="btn-cotizar" onclick="openModalForm('${producto.id}')">Cotizar</button>
                                         </div>
                                     </div>
                                 </div>
@@ -383,10 +386,46 @@
                         `;
                         document.getElementById("modalContainer").appendChild(modal);
                     }
-                
+                    function generarModalForm(producto) {
+                        const modalForm = document.createElement("div");
+                        modalForm.id = `${producto.id}_modalForm`;
+                        modalForm.classList.add("modalForm");
+                        modalForm.innerHTML =`
+                            <div class="modal-form-content">
+                                <span class="close" onclick="closeModalForm('${producto.id}')">x</span>
+                                <label class="titleform">Cotizar ${producto.title}</label>
+                                <form>
+                                <div class="form-row">
+                                      <div class="form-column">
+                                        <label>Nombre:</label>
+                                        <input type="text" name="nombre" id="nombre" required>
+
+                                        <label>Correo Electrónico:</label>
+                                        <input type="email" name="email" id="email" required>
+
+                                        <label>Número telefónico:</label>
+                                        <input type="number" name="telefono" id="telefono" required>
+                                        </div>
+                                        <div class="form-column">
+                                        <label>Producto a Comprar:</label>
+                                        <input type="text" name="producto" id="producto" disabled value="${producto.title}">
+
+                                        <label>Cantidad:</label>
+                                        <input type="number" name="cantidad" id="cantidad" required>
+                                      </div>
+                                    </div>
+                                    <label>Consulta:</label>
+                                    <textarea name="mensaje" rows="4" id="mensaje" required></textarea>
+                                    <input type="submit" value="Enviar Compra" id="enviarCompra">
+                                </form>
+                            </div>
+                        `;
+                        document.getElementById("modalForm").appendChild(modalForm);
+                    }
                     // Llamada a la función para generar los modales
                     productos.forEach((producto) => {
                         generarModal(producto);
+                        generarModalForm(producto);
                     });
                     function getStarsHTML(stars) {
                     const starHTML = '<span class="star">★</span>'; // Una sola estrella
@@ -406,19 +445,6 @@
                     }
                     return starsHTML;
                     }
-                    function toggleHeartIcon(icon) {
-                      // Alterna las clases de Font Awesome para cambiar el ícono
-                      icon.classList.toggle("far"); // Alternar el ícono vacío
-                      icon.classList.toggle("fas"); // Alternar el ícono sólido
-                    }
-
-                    // Obtén la etiqueta del ícono del corazón
-                    const heartIcon = document.querySelector(".heart-icon");
-
-                    // Agrega un controlador de eventos de clic al ícono del corazón
-                    heartIcon.addEventListener("click", function () {
-                      toggleHeartIcon(heartIcon);
-                    });
                 </script>
         </section>
     </main>
@@ -433,6 +459,8 @@
         /*agrega el selected al primer thumbnail*/
         var firstThumbnail = modal.querySelector('.product-thumbnails img');
         firstThumbnail.classList.add('selected');
+        setUpCounter();
+        setUpHeartToggle();
     }
 
     function closeModal(id) {
@@ -447,30 +475,70 @@
         var firstThumbnail = modal.querySelector('.product-thumbnails img');
         changeImage(firstThumbnail);
     }
+    function openModalForm(id) {
+        var modalForm = document.getElementById(id + "_modalForm");
+        modalForm.style.display = "block";
+        modalForm.classList.add("show");
+        //segun el valor de count se agrega la cantidad al input cantidad
+        var modal = document.getElementById(id + "_modal");
+        var count = modal.querySelector("#count").innerText;
+        var cantidad = modalForm.querySelector("#cantidad");
+        cantidad.value = count;
 
-    document.addEventListener("DOMContentLoaded", function () {
-    const decrementButton = document.getElementById("decrement");
-    const countElement = document.getElementById("count");
-    const incrementButton = document.getElementById("increment");
-    let count = 1;
+    }
+    function closeModalForm(id){
+        var modalForm = document.getElementById(id + "_modalForm");
+        modalForm.style.display = "none";
+        modalForm.classList.remove("show");
+    }
 
-    decrementButton.addEventListener("click", function () {
+    function setUpCounter() {
+        const modal = document.querySelector('.modal.show');  
+        if(!modal) {
+          console.log('No se encontró el modal');
+        }
+        // Obtener los elementos del contador en el contexto del modal
+        const decrementButton = modal.querySelector("#decrement");
+        const countElement = modal.querySelector("#count");
+        const incrementButton = modal.querySelector("#increment");
+        let count=1;
+
+        decrementButton.addEventListener("click", function () {
         if (count > 1) {
             count--;
             updateCount();
         }
-    });
+        console.log("decrement")
+        });
 
-    incrementButton.addEventListener("click", function () {
+        incrementButton.addEventListener("click", function () {
         count++;
         updateCount();
-    });
+        console.log("incrementado")
+        });
 
-    function updateCount() {
+        function updateCount() {
         countElement.innerText = count;
+        }
     }
-    });
-    
+
+    function setUpHeartToggle() {
+        const modal = document.querySelector('.modal.show');
+        if(!modal) {
+          console.log('No se encontró el modal');
+        }
+        // Obtener el icono del corazón 
+        const heartIcon = modal.querySelector('.heart-icon');
+        heartIcon.addEventListener("click", function () {
+                      toggleHeartIcon(heartIcon);
+        });
+        function toggleHeartIcon(icon) {
+            // Alterna las clases de Font Awesome para cambiar el ícono
+            icon.classList.toggle("far"); // Alternar el ícono vacío
+            icon.classList.toggle("fas"); // Alternar el ícono sólido
+        }
+    }            
+
     function changeImage(thumbnail) {
     // Obtener la URL de la miniatura clicada
     var newImageSrc = thumbnail.src;
@@ -489,11 +557,34 @@
 
     // Agregar la clase 'selected' al Thumbnail seleccionado
     thumbnail.classList.add('selected');
-}
+    }
 
 // Al inicio, muestra el primer Thumbnail en la imagen principal
 window.addEventListener('DOMContentLoaded', function() {
     var firstThumbnail = document.querySelector('.product-thumbnails img');
     changeImage(firstThumbnail);
 });
+
+    const enviarCompraButton = document.getElementById("enviarCompra");
+    enviarCompraButton.addEventListener("click", function() {
+  // Obten los datos del cliente del formulario
+  const nombre = document.getElementById("nombre").value;
+  const email = document.getElementById("email").value;
+  const mensaje = document.getElementById("mensaje").value;
+  const numero = "51995669450"; // Reemplaza esto con el número de WhatsApp al que deseas enviar el mensaje
+
+  // Construye el mensaje de WhatsApp con los datos del cliente
+  const mensajeWhatsApp = `Hola, mi nombre es ${nombre}, Correo Electrónico: ${email}, Asunto: ${mensaje}`;
+
+  // Codifica el mensaje para que sea una URL válida
+  const mensajeWhatsAppEncoded = encodeURIComponent(mensajeWhatsApp);
+
+  // Crea la URL de WhatsApp con el mensaje
+  const whatsappURL = `https://wa.me/${numero}?text=${mensajeWhatsAppEncoded}`;
+
+  // Abre una nueva ventana de WhatsApp
+  window.open(whatsappURL, "_blank");
+  console.log("abriendo whatsapp");
+});
+
 </script>
