@@ -30,7 +30,7 @@ h2 {
 
 @media screen and (min-width: 830px) {
   .main__productos {
-    margin-top: 7rem;
+    margin-top: 5.4rem;
   }
 }
 
@@ -58,6 +58,7 @@ h2 {
   width: 90%;
   margin-right: auto;
   margin-left: auto;
+  border-radius: 30px;
   display: block;
   padding: 1rem;
   animation: productos__video 2.5s;

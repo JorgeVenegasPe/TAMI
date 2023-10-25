@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <link rel="icon" href="../public/images/TAMI LOGO transparente 2.png" type="image/x-icon">
+  <link rel="icon" href="../public/images/TAMILOGOtransparente.png" type="image/x-icon">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dónde comprar | TAMI</title>
@@ -12,7 +12,7 @@
 </head>
 
 <body>
-  <?php include_once "menu.php"; ?>
+  <?php include_once "header.php"; ?>
   <main class="main__politicaEnvio">
     <article class="politica">
       <section class="politica__imagenes">
