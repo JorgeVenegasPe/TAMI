@@ -416,7 +416,7 @@
                                     </div>
                                     <label>Consulta:</label>
                                     <textarea name="mensaje" rows="4" id="mensaje" required></textarea>
-                                    <input type="submit" value="Enviar Compra" id="enviarCompra">
+                                    <input type="button" value="Enviar Compra" id="enviarCompra" onclick="enviarButton()">
                                 </form>
                             </div>
                         `;
@@ -484,6 +484,7 @@
         var count = modal.querySelector("#count").innerText;
         var cantidad = modalForm.querySelector("#cantidad");
         cantidad.value = count;
+        enviarButton();
 
     }
     function closeModalForm(id){
@@ -565,26 +566,31 @@ window.addEventListener('DOMContentLoaded', function() {
     changeImage(firstThumbnail);
 });
 
-    const enviarCompraButton = document.getElementById("enviarCompra");
-    enviarCompraButton.addEventListener("click", function() {
-  // Obten los datos del cliente del formulario
-  const nombre = document.getElementById("nombre").value;
-  const email = document.getElementById("email").value;
-  const mensaje = document.getElementById("mensaje").value;
-  const numero = "51995669450"; // Reemplaza esto con el número de WhatsApp al que deseas enviar el mensaje
+// Función para enviar el mensaje de WhatsApp
+function enviarButton(){  // Obtener valores del formulario
+    const modalForm = document.querySelector('.modalForm.show');  
+        if(!modalForm) {
+          console.log('No se encontró el modal');
+        }
+    const enviarCompra = modalForm.querySelector("#enviarCompra");
 
-  // Construye el mensaje de WhatsApp con los datos del cliente
-  const mensajeWhatsApp = `Hola, mi nombre es ${nombre}, Correo Electrónico: ${email}, Asunto: ${mensaje}`;
+    enviarCompra.addEventListener("click", function () {
+        const numero = modalForm.querySelector("#telefono").value;
+        const nombre = modalForm.querySelector("#nombre").value;
+        const email = modalForm.querySelector("#email").value;
+        const mensaje = modalForm.querySelector("#mensaje").value;
+        const producto = modalForm.querySelector("#producto").value;
+        const cantidad = modalForm.querySelector("#cantidad").value;
+        const texto = `Hola, mi nombre es ${nombre}, mi correo es ${email} y mi mensaje es: ${mensaje}. El producto solicitado es ${producto} y la cantidad es ${cantidad}`;
+        const mensajeCodificado = encodeURIComponent(texto);
+        const urlWhatsApp = `https://wa.me/${numero}?text=${mensajeCodificado}`;
 
-  // Codifica el mensaje para que sea una URL válida
-  const mensajeWhatsAppEncoded = encodeURIComponent(mensajeWhatsApp);
+       // Abrir en nueva pestaña
+       window.open(urlWhatsApp, '_blank');
+        console.log(numero);
+        console.log("se abrio la ventana");
+    });
+}
 
-  // Crea la URL de WhatsApp con el mensaje
-  const whatsappURL = `https://wa.me/${numero}?text=${mensajeWhatsAppEncoded}`;
-
-  // Abre una nueva ventana de WhatsApp
-  window.open(whatsappURL, "_blank");
-  console.log("abriendo whatsapp");
-});
 
 </script>

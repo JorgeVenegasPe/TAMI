@@ -88,3 +88,14 @@
   }
   
   input[type=number] { -moz-appearance:textfield; }
+
+  @media screen and (max-width: 500px) {
+    .modal-form-content{
+      max-width: 90%;
+      width: 90%;
+      min-width: 90%;
+    }
+    .form-column{
+      margin-right: 0px;
+    }
+  }
