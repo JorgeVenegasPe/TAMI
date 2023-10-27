@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="icon" href="../public/images/TAMI LOGO transparente 2.png" type="image/x-icon">
+  <link rel="icon" href="../public/images/TAMILOGOtransparente.png" type="image/x-icon">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contacto | TAMI</title>
   <link rel="stylesheet" type="text/css" href="../public/css/menu.css">
-  <link rel="stylesheet" type="text/css" href="../public/css/footer.css">
   <link rel="stylesheet" type="text/css" href="../public/css/contacto.css">
+  <link rel="stylesheet" type="text/css" href="../public/css/footer.css">
 </head>
 <body>
-  <?php include_once "menu.php";?>
+  <?php include_once "header.php";?>
   <main class="main__contacto">
     <div class="contacto__entrada">
       <form class="contacto__formulario" action="../controllers/enviarcorreo.php" method="post">

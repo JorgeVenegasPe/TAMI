@@ -20,23 +20,69 @@
   }
 }
 
+
+
 .panel {
-  text-align: center;
-  background-image: url("../images/logo.webp");
-  color: white;
-  background-size: cover;
-  background-position: center;
-  height: 550px;
+  background-image: url("../images/PORTADA.webp");
+  margin-top: 70px;
+  height: 530px;
   position: relative;
+}
+
+.redes{
+  background-color: rgb(4, 156, 155);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.redes__sociales {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  font-size: var(--fontsize-small);
+  justify-items: center;
+  align-items: center;
+}
+.redes__sociales a{
+  margin: 20px;
+  color: white;
+  font-size: 20px;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+.redes__sociales a i{
+  font-size: 30px;
+}
+
+.redes_icon{
+  align-items: center;
+  justify-content: center;
+  margin: 22px 0px 60px  60px;
+  font-size: 25px;
+  
+}
+.iconos{
+  color: white;
+  font-size: 50px;
+
+}
+
+.nombre_producto{
+  font-weight: bold;
+  align-items: center;
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 0px;
 }
 
 @media screen and (min-width: 830px) {
   .panel {
     height: 47rem;
     background-attachment: fixed;
-    background-position: center top;
-    background-size: 93.7rem;
-    margin-top: 7rem;
+    background-size: 90%;
+    margin-top: 5.4rem;
   }
 }
 
@@ -52,7 +98,7 @@
   width: 100%;
   height: 100%;
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .panel__titulo {
@@ -123,18 +169,19 @@
 
 .panel__boton {
   filter: opacity(0);
-  animation: panel 3s 2s 1 forwards;
+  animation: panel 2s 1 forwards;
   text-align: center;
   background-color: var(--color-botones);
   color: white;
   width: 8rem;
-  padding: .4rem;
+  padding: 4rem;
   position: absolute;
   bottom: 4rem;
   right: 50%;
   transform: translate(50%);
-  font-size: .8rem;
+  font-size: 8rem;
   width: 40%;
+  border-radius: 20px;
   transition: background-color 1s;
 }
 
@@ -148,18 +195,20 @@
 
 .panel__boton:hover {
   background-color: var(--hoverbotonpanel);
+  color: white;
 }
 
 .panel__link {
   text-decoration: none;
-  color: white;
+  color: black;
   display: block;
+  font-weight: bold;
 }
 
 .productos {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+  margin: 20px;
   transform: scale(1);
   animation: productos 2s;
   animation-play-state: var(--stop);
@@ -172,10 +221,13 @@
 }
 
 .productos__img {
-  width: 55%;
-  background-color: white;
-  border-bottom: 5px solid var(--color-prymario);
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
+
 
 @media screen and (min-width: 440px) {
   .productos__img {
@@ -190,7 +242,8 @@
 }
 
 .vid__item {
-  width: 100%;
+  width: 80%;
+  height: 90%;
 }
 
 .video {

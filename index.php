@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
-<link rel="icon" href="public/images/TAMI LOGO Fondo Turquesa.png" type="image/x-icon">
+<link rel="icon" href="public/images/TAMILOGOFondoTurquesa.png" type="image/x-icon">
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Inicio | TAMI</title>
@@ -11,17 +11,18 @@
 
 <body>
     <div>
-        <img src="public/images/TAMI LOGO Fondo blanco.png"  alt="">
+        <img src="public/images/TAMILOGOtransparente1.png"  alt="">
+        <p class="sub-titulo">“Tecnología e Innovación para TI”</p>
     </div>
 
 <script>
     // Función para redirigir a otra página después de 5 segundos
     function redireccionar() {
-      window.location.href = 'inicio.php'; // Esto me redirige a la página que quiero mostrar
+      window.location.href = 'views/inicio.php'; // Esto me redirige a la página que quiero mostrar
     }
 
     // Llama a la función de redirección después de 5 segundos (5000 milisegundos)
-    setTimeout(redireccionar, 5000);
+    setTimeout(redireccionar, 3000);
   </script>
 </body>
 </html>

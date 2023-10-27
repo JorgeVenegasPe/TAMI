@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <link rel="icon" href="../public/images/TAMI LOGO transparente 2.png" type="image/x-icon">
+    <link rel="icon" href="../public/images/TAMILOGOtransparente.png" type="image/x-icon">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Productos | TAMI</title>
@@ -13,13 +13,13 @@
 </head>
 
 <body>
-    <?php include_once "menu.php"; ?>
+    <?php include_once "header.php"; ?>
     <main class="main__productos">
         <h1 class="productos__titulo">Nuestros productos</h1>
         <section class="productos__multimedia">
-            <video class="productos__video" src="../public/videos/video__productos.mp4" autoplay="autoplay"
-                muted="muted" loop="loop"></video>
+            <video class="productos__video" src="../public/videos/PRODUCTOSTAMI_1.mp4" autoplay="autoplay" muted="muted" loop="loop"></video>
         </section>
+
         <section class="productos__catalogo" id="catalogo1">
             <h2 class="productos__tituloCatalogo" id="productos__tituloCatalogo">Catálogo</h2>
 
@@ -77,6 +77,72 @@
                                 onclick="openModal('Selladora-de-bolsas')">Vista rápida</a>
                         </figcaption>
                     </figure>
+
+                     <!-- Modal para SBotellas 1_1 -->
+                     <div id="S__Botellas_modal" class="modal">
+                        <div class="modal-content">
+                            <span class="close" onclick="closeModal('S__Botellas')">Cerrar</span>
+                            <div class="product-details">
+                                <img src="../public/images/catalogo_productos/SBotellas-1_1.1.png" alt="SBotellas 1_1" />
+                                <div class="product-info">
+                                    <h2 class="pro_titulo">Sellador de Botellas</h2>
+                                    <p> <samp class="sub_titulo"> Industrias aplicables:</samp>Planta de fabricación,
+                                        Fábrica de alimentos,
+                                        Comercio minorista, Tienda de alimentos y bebidas.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Modal para el tercer elemento -->
+                    <div id="maquina__embalaje_modal" class="modal ">
+                        <div class="modal-content">
+                            <span class="close" onclick="closeModal('maquina__embalaje')">Cerrar</span>
+                            <div class="product-details">
+                                <img src="../public/images/catalogo_productos/embalaje2.png" alt="EMBALAJE" />
+                                <div class="product-info">
+                                    <h2 class="pro_titulo">Máquina de embalaje</h2>
+                                    <p> <samp class="sub_titulo"> Industrias aplicables:</samp> Alimentos y Bebidas de la
+                                        fábrica, Restaurante,
+                                        Venta al por menor, Tienda de alimentos.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Modal para el cuarto elemento -->
+                    <div id="sellador__vasos_modal" class="modal">
+                        <div class="modal-content">
+                            <span class="close" onclick="closeModal('sellador__vasos')">Cerrar</span>
+                            <div class="product-details">
+                                <img src="../public/images/catalogo_productos/sellador_vasos2.png" alt="SELLADOR VASOS" />
+                                <div class="product-info">
+                                    <h2 class="pro_titulo">Sellador de vasos</h2>
+                                    <p> <samp class="sub_titulo"> Industrias aplicables:</samp> Hoteles en, Alimentos y
+                                        Bebidas de fábrica,
+                                        Alimentos y Bebidas de pequeños negocios.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- 6 -->
+                    <div id="Selladora-de-bolsas_modal" class="modal">
+                        <div class="modal-content">
+                            <span class="close" onclick="closeModal('Selladora-de-bolsas')">Cerrar</span>
+                            <div class="product-details">
+                                <img src="../public/images/catalogo_productos/Selladora-de-bolsas.webp"
+                                    alt="Selladora-de-bolsas" />
+                                <div class="product-info">
+                                    <h2 class="pro_titulo">Selladora de bolsas</h2>
+                                    <p> <samp class="sub_titulo"> Industrias aplicables:</samp>Alimentos y Bebidas de la
+                                        fábrica, Restaurante,
+                                        Venta al por menor, Tienda de alimentos</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                    
                 </div>
             </div>
@@ -84,7 +150,10 @@
             <div style="padding: 10px;">
                 <h2 style="padding: 20px 80px 20px 80px; color: white;" >Trabajo</h2>
                 <div class="productos__imagenes">
+                   
+                    
 
+                    
                     <!-- 7 -->
                     <figure class="productos__item" id="Soldadora-LINGBA-5">
                         <a href="#productos__tituloCatalogo" class="productos__link1">
@@ -97,6 +166,7 @@
                                 onclick="openModal('Soldadora-LINGBA-5')">Vista rápida</a>
                         </figcaption>
                     </figure>
+
                     
                     <!-- 8 -->
                     <figure class="productos__item" id="Soldadora-SPARK-3">
@@ -110,6 +180,50 @@
                                 onclick="openModal('Soldadora-SPARK-3')">Vista rápida</a>
                         </figcaption>
                     </figure>
+                   
+
+
+                   
+
+                   
+
+                    <!-- 7 -->
+                    <div id="Soldadora-LINGBA-5_modal" class="modal">
+                        <div class="modal-content">
+                            <span class="close" onclick="closeModal('Soldadora-LINGBA-5')">Cerrar</span>
+                            <div class="product-details">
+                                <img src="../public/images/catalogo_productos/Soldadora-LINGBA-5.webp"
+                                    alt="Soldadora-LINGBA-5" />
+                                <div class="product-info">
+                                    <h2 class="pro_titulo">Soldadora LINGBA 5</h2>
+                                    <p> <samp class="sub_titulo"> Industrias aplicables:</samp>Material de construcción de
+                                        Ɵendas, Reparación de
+                                        maquinaria Ɵendas, Planta de fabricación.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>       
+                    
+                    
+                    <!-- 8 -->
+                    <div id="Soldadora-SPARK-3_modal" class="modal">
+                        <div class="modal-content">
+                            <span class="close" onclick="closeModal('Soldadora-SPARK-3')">Cerrar</span>
+                            <div class="product-details">
+                                <img src="../public/images/catalogo_productos/Soldadora-SPARK-3.png"
+                                    alt="Soldadora-SPARK-3" />
+                                <div class="product-info">
+                                    <h2 class="pro_titulo">Soldadora SPARK 3</h2>
+                                    <p> <samp class="sub_titulo"> Industrias aplicables:</samp>Material de construcción de
+                                        Ɵendas, Reparación de
+                                        maquinaria Ɵendas, Planta de fabricación.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
 
@@ -119,9 +233,9 @@
 
                     <!-- 4 -->
                     <figure class="productos__item" id="Panel__Fibra">
-                        <a href="#productos__tituloCatalogo" class="productos__link1">
-                            <img class="productos__img" src="../public/images/catalogo_productos/BAMBO FIBER WALLBOARD1.png"
-                                alt="Panel Fibra" /></a>
+                    <a href="#productos__tituloCatalogo" class="productos__link1">
+                        <img class="productos__img" src="../public/images/catalogo_productos/BAMBOFIBERWALLBOARD1.png"
+                            alt="Panel Fibra" /></a>
                         Panel de Fibra de Bambo
 
                         <figcaption class="productos__description">
@@ -129,6 +243,9 @@
                                 onclick="openModal('Panel__Fibra')">Vista rápida</a>
                         </figcaption>
                     </figure>
+                    
+                  
+
 
                     <!-- 9-->
                     <figure class="productos__item" id="Ventilador-Holografico">
@@ -145,9 +262,9 @@
 
                     <!-- 10-->
                     <figure class="productos__item" id="WPC__FENCEPANEL">
-                        <a href="#productos__tituloCatalogo" class="productos__link1">
-                            <img class="productos__img" src="../public/images/catalogo_productos/WPC FENCEPANEL.png"
-                                alt="WPC__FENCEPANEL" /></a>
+                    <a href="#productos__tituloCatalogo" class="productos__link1">
+                        <img class="productos__img" src="../public/images/catalogo_productos/WPCFENCEPANEL.png"
+                            alt="WPC__FENCEPANEL" /></a>
                         WPC FENCEPANEL
 
                         <figcaption class="productos__description">
@@ -158,9 +275,9 @@
 
                     <!-- 11-->
                     <figure class="productos__item" id="WPC__WALLPANEL">
-                        <a href="#productos__tituloCatalogo" class="productos__link1">
-                            <img class="productos__img" src="../public/images/catalogo_productos/WPC WALLPANEL.png"
-                                alt="WPC__WALLPANEL" /></a>
+                    <a href="#productos__tituloCatalogo" class="productos__link1">
+                        <img class="productos__img" src="../public/images/catalogo_productos/WPCWALLPANEL.png"
+                            alt="WPC__WALLPANEL" /></a>
                         WPC__WALLPANEL
 
                         <figcaption class="productos__description">
@@ -447,6 +564,12 @@
                     }
                 </script>
         </section>
+
+
+
+
+
+        
     </main>
     <?php include_once "footer.php"; ?>
     <script type="application/javascript" src="../public/js/main.js" async></script>
@@ -467,13 +590,6 @@
         var modal = document.getElementById(id + "_modal");
         modal.style.display = "none";
         modal.classList.remove("show"); // Quita la clase "show" del modal
-        //reiniciar el thumbnail a la imagen principal
-        var thumbnails = modal.querySelectorAll('.product-thumbnails img');
-        thumbnails.forEach(function (thumb) {
-            thumb.classList.remove('selected');
-        });
-        var firstThumbnail = modal.querySelector('.product-thumbnails img');
-        changeImage(firstThumbnail);
     }
     function openModalForm(id) {
         var modalForm = document.getElementById(id + "_modalForm");
