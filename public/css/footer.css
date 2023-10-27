@@ -15,13 +15,6 @@
   margin: 0;
   font-weight: bolder;
 }
-
-@media screen and (min-width: 830px) {
-  .footer__titulo {
-    font-size: var(--fontsize-titulo);
-  }
-}
-
 .footer__sociales {
   display: grid;
   grid-gap: 1rem;
@@ -33,70 +26,27 @@
   grid-template-columns: 1fr 1fr;
   justify-items: center;
 }
-
-@media screen and (min-width: 830px) {
-  .footer__sociales {
-    font-size: var(--fontsize-normal);
-  }
-}
-
 .footer__link {
   text-decoration: none;
   color: var(--color-linkFootter);
   display: flex;
   align-items: center;
 }
-
 .footer_copy {
   text-align: center;
   font-size: var(--fontsize-small);
 }
-
-@media screen and (min-width: 830px) {
-  .footer_copy {
-    font-size: var(--fontsize-normal);
-  }
-}
-
 .icono__1 {
   display: block;
   margin: .5rem;
   font-size: var(--fontsize-normal);
 }
-
-@media screen and (min-width: 640px) {
-  .icono__1 {
-    font-size: 2rem;
-    display: initial;
-  }
-}
-
 .footer__whas {
   width: 160px;
 }
-
-@media screen and (min-width:630px) {
-  .footer__whas {
-    width: 173px;
-  }
-}
-
-@media screen and (min-width:830px) {
-  .footer__whas {
-    width: 230px;
-  }
-}
-
 .footer__face {
   width: 94px;
 }
-
-@media screen and (min-width:830px) {
-  .footer__face {
-    width: 130px;
-  }
-}
-
 .footer__animacion {
   animation: footer__animacion 3s forwards;
   animation-play-state: var(--stop5);
@@ -118,14 +68,6 @@
   text-align: center;
   z-index: 50;
 }
-
-@media screen and (min-width: 830px) {
-  .icono__flotante {
-    width: 4%;
-    right: 2%;
-  }
-}
-
 .logo__whatsapp {
   width: 100%;
   opacity: 1;
@@ -134,3 +76,55 @@
 .logo__whatsapp:hover {
   opacity: .8;
 }
+
+
+
+
+
+
+  @media screen and (min-width:630px) {
+    .footer__whas {
+      width: 173px;
+    }
+  }
+
+  @media screen and (min-width: 640px) {
+    .icono__1 {
+      font-size: 2rem;
+      display: initial;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .logo__whatsapp {
+      width: 36%;
+      opacity: 1;
+    }
+  }
+
+  @media screen and (min-width: 830px) {
+    .footer__titulo {
+      font-size: var(--fontsize-titulo);
+    }
+    .footer__sociales {
+      font-size: var(--fontsize-normal);
+    }
+    .footer_copy {
+      font-size: var(--fontsize-normal);
+    }
+    .footer__whas {
+      width: 230px;
+    }
+  
+    .footer__face {
+      width: 130px;
+    }
+    .icono__flotante {
+      width: 4%;
+      right: 2%;
+    }
+    .logo__whatsapp {
+      width: 90%;
+      opacity: 1;
+    }
+  }

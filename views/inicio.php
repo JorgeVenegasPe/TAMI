@@ -15,6 +15,7 @@
   <?php include_once "header.php"; ?>
     <main class="main__inicio">
         <section class="panel">
+            <!-- <img src="../public/images/PORTADA.webp" alt="" srcset=""> -->
            <a class="panel__boton" href="productos.php">VER PRODUCTOS</a>
         </section>
         <section class="redes">

@@ -150,3 +150,23 @@ header.sticky .nav-bar{
 .nav-menu-btn{
   display: none;
 }
+
+
+/* Estilos para pantallas de 767px o menos */
+/* @media screen and (max-width: 767px) {
+  .nav-items {
+      display: none; 
+  }
+
+  .nav-menu-btn, .nav-close-btn {
+      display: block; 
+  }
+
+  .nav-menu-btn {
+      cursor: pointer;
+  }
+
+  .nav-menu-open {
+      display: block;
+  }
+} */
