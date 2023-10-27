@@ -78,72 +78,6 @@
                         </figcaption>
                     </figure>
 
-                     <!-- Modal para SBotellas 1_1 -->
-                     <div id="S__Botellas_modal" class="modal">
-                        <div class="modal-content">
-                            <span class="close" onclick="closeModal('S__Botellas')">Cerrar</span>
-                            <div class="product-details">
-                                <img src="../public/images/catalogo_productos/SBotellas-1_1.1.png" alt="SBotellas 1_1" />
-                                <div class="product-info">
-                                    <h2 class="pro_titulo">Sellador de Botellas</h2>
-                                    <p> <samp class="sub_titulo"> Industrias aplicables:</samp>Planta de fabricación,
-                                        Fábrica de alimentos,
-                                        Comercio minorista, Tienda de alimentos y bebidas.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Modal para el tercer elemento -->
-                    <div id="maquina__embalaje_modal" class="modal ">
-                        <div class="modal-content">
-                            <span class="close" onclick="closeModal('maquina__embalaje')">Cerrar</span>
-                            <div class="product-details">
-                                <img src="../public/images/catalogo_productos/embalaje2.png" alt="EMBALAJE" />
-                                <div class="product-info">
-                                    <h2 class="pro_titulo">Máquina de embalaje</h2>
-                                    <p> <samp class="sub_titulo"> Industrias aplicables:</samp> Alimentos y Bebidas de la
-                                        fábrica, Restaurante,
-                                        Venta al por menor, Tienda de alimentos.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Modal para el cuarto elemento -->
-                    <div id="sellador__vasos_modal" class="modal">
-                        <div class="modal-content">
-                            <span class="close" onclick="closeModal('sellador__vasos')">Cerrar</span>
-                            <div class="product-details">
-                                <img src="../public/images/catalogo_productos/sellador_vasos2.png" alt="SELLADOR VASOS" />
-                                <div class="product-info">
-                                    <h2 class="pro_titulo">Sellador de vasos</h2>
-                                    <p> <samp class="sub_titulo"> Industrias aplicables:</samp> Hoteles en, Alimentos y
-                                        Bebidas de fábrica,
-                                        Alimentos y Bebidas de pequeños negocios.</p>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <!-- 6 -->
-                    <div id="Selladora-de-bolsas_modal" class="modal">
-                        <div class="modal-content">
-                            <span class="close" onclick="closeModal('Selladora-de-bolsas')">Cerrar</span>
-                            <div class="product-details">
-                                <img src="../public/images/catalogo_productos/Selladora-de-bolsas.webp"
-                                    alt="Selladora-de-bolsas" />
-                                <div class="product-info">
-                                    <h2 class="pro_titulo">Selladora de bolsas</h2>
-                                    <p> <samp class="sub_titulo"> Industrias aplicables:</samp>Alimentos y Bebidas de la
-                                        fábrica, Restaurante,
-                                        Venta al por menor, Tienda de alimentos</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                   
                 </div>
             </div>
         
@@ -181,48 +115,6 @@
                         </figcaption>
                     </figure>
                    
-
-
-                   
-
-                   
-
-                    <!-- 7 -->
-                    <div id="Soldadora-LINGBA-5_modal" class="modal">
-                        <div class="modal-content">
-                            <span class="close" onclick="closeModal('Soldadora-LINGBA-5')">Cerrar</span>
-                            <div class="product-details">
-                                <img src="../public/images/catalogo_productos/Soldadora-LINGBA-5.webp"
-                                    alt="Soldadora-LINGBA-5" />
-                                <div class="product-info">
-                                    <h2 class="pro_titulo">Soldadora LINGBA 5</h2>
-                                    <p> <samp class="sub_titulo"> Industrias aplicables:</samp>Material de construcción de
-                                        Ɵendas, Reparación de
-                                        maquinaria Ɵendas, Planta de fabricación.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>       
-                    
-                    
-                    <!-- 8 -->
-                    <div id="Soldadora-SPARK-3_modal" class="modal">
-                        <div class="modal-content">
-                            <span class="close" onclick="closeModal('Soldadora-SPARK-3')">Cerrar</span>
-                            <div class="product-details">
-                                <img src="../public/images/catalogo_productos/Soldadora-SPARK-3.png"
-                                    alt="Soldadora-SPARK-3" />
-                                <div class="product-info">
-                                    <h2 class="pro_titulo">Soldadora SPARK 3</h2>
-                                    <p> <samp class="sub_titulo"> Industrias aplicables:</samp>Material de construcción de
-                                        Ɵendas, Reparación de
-                                        maquinaria Ɵendas, Planta de fabricación.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
                 </div>
             </div>
