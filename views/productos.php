@@ -218,7 +218,7 @@
                         },
                         {
                             id: "Panel__Fibra",
-                            imgSrc: "../public/images/catalogo_productos/BAMBO FIBER WALLBOARD1.png",
+                            imgSrc: "../public/images/catalogo_productos/BAMBOFIBERWALLBOARD1.png",
                             title: "Panel de Fibra de Bambo",
                             industries: "Industrias aplicables: Oficina; hotel; centro comercial; sala de estar, etc.",
                             n_comments: "11",
@@ -284,7 +284,7 @@
                         },
                         {
                             id: "WPC__FENCEPANEL",
-                            imgSrc: "../public/images/catalogo_productos/WPC FENCEPANEL.png",
+                            imgSrc: "../public/images/catalogo_productos/WPCFENCEPANEL.png",
                             title: "WPC FENCEPANEL",
                             industries: "Industrias aplicables: Oficina; hotel; centro comercial; sala de estar, etc.",
                             n_comments: "30",
@@ -295,7 +295,7 @@
                         },
                         {
                             id: "WPC__WALLPANEL",
-                            imgSrc: "../public/images/catalogo_productos/WPC WALLPANEL.png",
+                            imgSrc: "../public/images/catalogo_productos/WPCWALLPANEL.png",
                             title: "WPC WALLPANEL",
                             industries: "Industrias aplicables: Oficina; hotel; centro comercial; sala de estar, etc.",
                             n_comments: "10",
