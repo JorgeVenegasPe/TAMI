@@ -95,6 +95,13 @@
     }
   }
 
+  @media screen and (min-width: 720px) {
+    .logo__whatsapp {
+      width: 50%;
+      opacity: 1;
+    }
+  }
+
   @media screen and (min-width: 768px) {
     .logo__whatsapp {
       width: 36%;

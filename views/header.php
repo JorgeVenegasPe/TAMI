@@ -1,8 +1,4 @@
-<link rel="stylesheet" type="text/css" href="../public/css/menu.css">
-
-<a class="icono__flotante" href="https://api.whatsapp.com/send?phone=51978883199" target="_blank">
-    <img class="logo__whatsapp" src="../public/images/whatsapp.png" alt="">
-</a>
+<a class="icono__flotante" href="https://api.whatsapp.com/send?phone=51978883199" target="_blank"><img class="logo__whatsapp" src="../public/images/whatsapp.png" alt=""></a>
 <header>
     
     <div class="nav-bar">

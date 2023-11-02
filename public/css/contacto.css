@@ -1,43 +1,7 @@
-
-/* para colorear cada pagina en la ue esrtammos en la barra de navegador */
-@media screen and (min-width: 830px) {
-  .menu__item:nth-child(5) {
-    background-color: var(--color-primario1);
-    position: relative;
-  }
-
-  .menu__item:nth-child(5)::before {
-    content: "";
-    display: block;
-    height: 2rem;
-    width: 30%;
-    position: absolute;
-    bottom: -.9rem;
-    transform: translate(50%) rotate(52deg);
-    z-index: -1;
-    background-color: var(--color-primario1);
-    border: 2px solid gray;
-  }
-}
-
-@media screen and (min-width: 830px) {
-  .main__contacto {
-    margin-top: 10rem;
-  }
-}
-
 .contacto__entrada {
   display: flex;
   flex-direction: column;
 }
-
-@media screen and (min-width: 830px) {
-  .contacto__entrada {
-    display: flex;
-    flex-direction: row;
-  }
-}
-
 .contacto__formulario {
   margin-top: 1.5rem;
   display: grid;
@@ -46,23 +10,6 @@
   margin-bottom: 1rem;
   order: 1;
 }
-
-@media screen and (min-width: 640px) {
-  .contacto__formulario {
-    margin-top: 0rem;
-    --fontsize-normal: 1.5rem;
-    font-size: var(--fontsize-normal);
-  }
-}
-
-@media screen and (min-width: 830px) {
-  .contacto__formulario {
-    padding: 2rem;
-    flex: 1;
-    animation: contacto__formulario 2.5s;
-  }
-}
-
 @keyframes contacto__formulario {
   from {
     transform: translate(100%);
@@ -97,35 +44,11 @@
   color: var(--color-botones);
   font-size: var(--fontsize-titulo);
 }
-
-@media screen and (min-width: 640px) {
-  .contacto__titulo {
-    --fontsize-titulo: 2.5rem;
-  }
-}
-
-@media screen and (min-width: 830px) {
-  .contacto__titulo {
-    animation: contacto__titulo 2.5s;
-  }
-}
-
 @keyframes contacto__titulo {
   from {
     transform: translateY(-200%);
   }
 }
-
-@media screen and (min-width: 830px) {
-  .contacto__contenido {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    order: -1;
-    animation: contacto__contenido 2.5s;
-  }
-}
-
 @keyframes contacto__contenido {
   from {
     transform: translate(-100%);
@@ -153,13 +76,6 @@
   font-size: .8rem;
 }
 
-@media screen and (min-width: 830px) {
-  .footer__sociales1 {
-    width: 30%;
-    font-size: 1rem;
-  }
-}
-
 .footer__item1 {
   margin: .8rem 0;
 }
@@ -171,4 +87,93 @@
 
 .contacto__horario {
   flex: 1;
+}
+
+@media screen and (min-width: 496px) {
+  .contacto__entrada {
+    display: flex;
+    flex-direction: column;
+    margin-top: 18%;
+  }
+}
+
+@media screen and (min-width: 500px) {
+.contacto__entrada {
+  display: flex;
+  flex-direction: column;
+  margin-top: 18%;
+}
+
+}
+
+@media screen and (min-width: 640px) {
+  .contacto__formulario {
+    margin-top: 0rem;
+    --fontsize-normal: 1.5rem;
+    font-size: var(--fontsize-normal);
+  }
+
+  .contacto__titulo {
+    --fontsize-titulo: 2.5rem;
+  }
+  .contacto__entrada {
+    display: flex;
+    flex-direction: column;
+    margin-top: 18%;
+}
+}
+
+
+/* para colorear cada pagina en la ue esrtammos en la barra de navegador */
+@media screen and (min-width: 830px) {
+  .menu__item:nth-child(5) {
+    background-color: var(--color-primario1);
+    position: relative;
+  }
+
+  .menu__item:nth-child(5)::before {
+    content: "";
+    display: block;
+    height: 2rem;
+    width: 30%;
+    position: absolute;
+    bottom: -.9rem;
+    transform: translate(50%) rotate(52deg);
+    z-index: -1;
+    background-color: var(--color-primario1);
+    border: 2px solid gray;
+  }
+
+  .main__contacto {
+    margin-top: 10rem;
+  }
+
+  .contacto__entrada {
+    display: flex;
+    flex-direction: row;
+    margin-top: 0%;
+  }
+  
+
+  .contacto__formulario {
+    padding: 2rem;
+    flex: 1;
+    animation: contacto__formulario 2.5s;
+  }
+
+  .contacto__titulo {
+    animation: contacto__titulo 2.5s;
+  }
+
+  .contacto__contenido {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    order: -1;
+    animation: contacto__contenido 2.5s;
+  }
+  .footer__sociales1 {
+    width: 30%;
+    font-size: 1rem;
+  }
 }

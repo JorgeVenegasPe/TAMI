@@ -1,52 +1,15 @@
-@media screen and (min-width: 830px) {
-  .menu__item:nth-child(6) {
-    background-color: var(--color-primario1);
-    position: relative;
-  }
-
-  .menu__item:nth-child(6)::before {
-    content: "";
-    display: block;
-    background-color: black;
-    height: 2rem;
-    width: 30%;
-    position: absolute;
-    bottom: -.9rem;
-    transform: translate(70%, -20%) rotate(52deg);
-    z-index: -1;
-    background-color: var(--color-primario1);
-    border: 2px solid gray;
-  }
-}
-
 figure {
   margin: 0;
 }
-
 .main__politicaEnvio {
   background-color: rgb(236, 251, 251);
 }
-
-@media screen and (min-width: 830px) {
-  .main__politicaEnvio {
-    margin-top: 5.4rem;
-  }
-}
-
 .politica {
   padding: 2rem;
   padding-bottom: 1rem;
   display: flex;
   flex-direction: column;
 }
-
-@media screen and (min-width: 830px) {
-  .politica {
-    padding: 0rem;
-    flex-direction: row;
-  }
-}
-
 .politica__img {
   width: 100%;
   object-fit: cover;
@@ -61,14 +24,6 @@ figure {
   animation: politica__imagenes 2.5s;
   order: 1;
 }
-
-@media screen and (min-width: 830px) {
-  .politica__imagenes {
-    order: 0;
-    flex: 1;
-  }
-}
-
 .politica__animacion {
   flex-wrap: wrap;
   display: flex;
@@ -76,20 +31,6 @@ figure {
   animation: politica__animacion1 2s forwards;
   animation-play-state: var(--stop7);
 }
-
-@media screen and (min-width: 830px) {
-  .politica__animacion {
-    animation: politica__animacion 2s forwards;
-    animation-play-state: running;
-  }
-
-  @keyframes politica__animacion {
-    from {
-      transform: scale(0);
-    }
-  }
-}
-
 @keyframes politica__animacion1 {
   from {
     transform: scale(0);
@@ -100,30 +41,10 @@ figure {
   width: 80%;
   margin: 1rem;
 }
-
-@media screen and (min-width: 440px) {
-  .politica__item {
-    width: 40%;
-  }
-}
-
-@media screen and (min-width: 830px) {
-  .politica__item {
-    width: 55%;
-  }
-}
-
 .politica__content {
   animation: contacto__content 2.5s;
   margin: 1rem;
   margin-top: 0;
-}
-
-@media screen and (min-width: 830px) {
-  .politica__content {
-    flex: 1;
-    text-align: left;
-  }
 }
 
 @keyframes contacto__content {
@@ -136,13 +57,6 @@ figure {
   color: var(--color-botones);
   font-size: var(--fontsize-titulo);
   margin-top: 0;
-}
-
-@media screen and (min-width: 830px) {
-  .politica__titulo {
-    font-size: 40px;
-    margin-top: 32px;
-  }
 }
 
 .politica__subtitulo,
@@ -217,21 +131,9 @@ figure {
   font-weight: 600;
 }
 
-@media screen and (min-width: 830px) {
-  .margin1 {
-    margin-left: -5px;
-  }
-}
-
 .margin2 {
   margin-left: 10px;
   font-weight: 600;
-}
-
-@media screen and (min-width: 830px) {
-  .margin2 {
-    margin-left: 1px;
-  }
 }
 
 .margin3 {
@@ -239,7 +141,79 @@ figure {
   margin-left: 1px;
 }
 
+
+@media screen and (min-width: 440px) {
+  .politica__item {
+    width: 40%;
+  }
+  .politica {
+    margin-top: 18%;
+}
+}
 @media screen and (min-width: 830px) {
+  .menu__item:nth-child(6) {
+    background-color: var(--color-primario1);
+    position: relative;
+  }
+
+  .menu__item:nth-child(6)::before {
+    content: "";
+    display: block;
+    background-color: black;
+    height: 2rem;
+    width: 30%;
+    position: absolute;
+    bottom: -.9rem;
+    transform: translate(70%, -20%) rotate(52deg);
+    z-index: -1;
+    background-color: var(--color-primario1);
+    border: 2px solid gray;
+  }
+  .main__politicaEnvio {
+    margin-top: 5.4rem;
+  }
+  .politica {
+    padding: 0rem;
+    flex-direction: row;
+    margin-top: 0%;
+  }
+
+  .politica__imagenes {
+    order: 0;
+    flex: 1;
+  }
+
+  .politica__animacion {
+    animation: politica__animacion 2s forwards;
+    animation-play-state: running;
+  }
+
+  @keyframes politica__animacion {
+    from {
+      transform: scale(0);
+    }
+  }
+  .politica__item {
+    width: 55%;
+  }
+  .politica__content {
+    flex: 1;
+    text-align: left;
+  }
+
+  .politica__titulo {
+    font-size: 40px;
+    margin-top: 32px;
+  }
+
+  .margin1 {
+    margin-left: -5px;
+  }
+
+  .margin2 {
+    margin-left: 1px;
+  }
+
   .margin3 {
     margin-left: 2px;
   }
