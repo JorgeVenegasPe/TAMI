@@ -77,39 +77,63 @@
   opacity: .8;
 }
 
-
-
-
-
-
-  @media screen and (min-width:630px) {
+@media screen and (min-width: 280px) {
+  .footer {
+    width: 140%;
+    padding: 1rem;
+    background-color: rgb(135, 230, 230);
+}
+}
+@media screen and (min-width:450px) {
+  .logo__whatsapp {
+    width: 80%;
+    opacity: 1;
+  }
+  .footer {
+    width: auto;
+    padding: 1rem;
+    background-color: rgb(135, 230, 230);
+}
+}
+@media screen and (min-width:500px) {
+  .logo__whatsapp {
+    width: 60%;
+    opacity: 1;
+  }
+}
+@media screen and (min-width:630px) {
     .footer__whas {
       width: 173px;
     }
+    .logo__whatsapp {
+      width: 60%;
+      opacity: 1;
   }
-
-  @media screen and (min-width: 640px) {
+}
+@media screen and (min-width: 640px) {
     .icono__1 {
       font-size: 2rem;
       display: initial;
     }
-  }
-
-  @media screen and (min-width: 720px) {
+}
+@media screen and (min-width: 720px) {
     .logo__whatsapp {
       width: 50%;
       opacity: 1;
     }
-  }
-
-  @media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 768px) {
     .logo__whatsapp {
       width: 36%;
       opacity: 1;
     }
-  }
-
-  @media screen and (min-width: 830px) {
+}
+@media screen and (min-width: 830px) {
+  .footer {
+    width: auto;
+    padding: 1rem;
+    background-color: rgb(135, 230, 230);
+}
     .footer__titulo {
       font-size: var(--fontsize-titulo);
     }
@@ -134,4 +158,4 @@
       width: 90%;
       opacity: 1;
     }
-  }
+}

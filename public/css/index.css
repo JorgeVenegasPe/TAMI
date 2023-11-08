@@ -175,7 +175,10 @@
 
 
 
-@media screen and (min-width: 440px) {
+@media screen and (min-width: 300px) {
+  .main__inicio {
+    width: 140%;
+}
   .productos__img {
     width: 30%;
   }
@@ -194,6 +197,107 @@
     flex-direction: column;
     align-items: center;
     gap: 30px;
+}
+.redes__sociales {
+  gap: 0px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.redes__sociales a {
+  font-size: 14px;
+}
+.redes__sociales a i {
+  font-size: 18px;
+}
+.panel {
+  background-image: url(../images/PORTADA.webp);
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: top;
+  height: 13rem;
+  background-attachment: fixed;
+  background-size: 100%;
+  margin-top: 4.4rem;
+}
+.panel__boton {
+  filter: opacity(0);
+  animation: panel 2s 1 forwards;
+  text-align: center;
+  background-color: var(--color-botones);
+  color: white;
+  width: 8rem;
+  padding: 1rem;
+  position: absolute;
+  bottom: 4rem;
+  right: 50%;
+  transform: translate(50%);
+  font-size: 0.8rem;
+  width: 30%;
+  border-radius: 20px;
+  transition: background-color 1s;
+}
+}
+
+@media screen and (min-width: 440px) {
+  .main__inicio {
+    width: 100%;
+}
+  .productos__img {
+    width: 30%;
+  }
+  .nav-items {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+  .productos {
+    display: flex;
+    margin: 20px;
+    transform: scale(1);
+    animation: productos 2s;
+    animation-play-state: var(--stop);
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+.redes__sociales {
+  gap: 0px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.redes__sociales a {
+  font-size: 14px;
+}
+.redes__sociales a i {
+  font-size: 18px;
+}
+.panel {
+  background-image: url(../images/PORTADA.webp);
+  position: relative;
+  background-repeat: no-repeat;
+  background-position-y: 4rem;
+  height: 17rem;
+  background-attachment: fixed;
+  background-size: 100%;
+  margin-top: 4.4rem;
+}
+.panel__boton {
+  filter: opacity(0);
+  animation: panel 2s 1 forwards;
+  text-align: center;
+  background-color: var(--color-botones);
+  color: white;
+  width: 8rem;
+  padding: 1rem;
+  position: absolute;
+  bottom: 4rem;
+  right: 50%;
+  transform: translate(50%);
+  font-size: 0.8rem;
+  width: 30%;
+  border-radius: 20px;
+  transition: background-color 1s;
 }
 }
 
@@ -209,6 +313,44 @@
     align-items: center;
     gap: 30px;
 }
+.redes__sociales {
+  gap: 0px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.redes__sociales a {
+  font-size: 16px;
+}
+.redes__sociales a i {
+  font-size: 18px;
+}
+.panel {
+  background-image: url(../images/PORTADA.webp);
+  position: relative;
+  background-repeat: no-repeat;
+  background-position-y: 4rem;
+  height: 20rem;
+  background-attachment: fixed;
+  background-size: 100%;
+  margin-top: 4.4rem;
+}
+.panel__boton {
+  filter: opacity(0);
+  animation: panel 2s 1 forwards;
+  text-align: center;
+  background-color: var(--color-botones);
+  color: white;
+  width: 8rem;
+  padding: 1rem;
+  position: absolute;
+  bottom: 4rem;
+  right: 50%;
+  transform: translate(50%);
+  font-size: 0.8rem;
+  width: 30%;
+  border-radius: 20px;
+  transition: background-color 1s;
+}
 }
 
 @media screen and (min-width: 700px) {
@@ -220,28 +362,48 @@
     align-items: center;
     flex-direction: row;
   }
+  .panel__boton {
+    padding: 1rem;
+    font-size: 1rem;
+    width: 25%;
+  }
   .panel {
     background-image: url(../images/PORTADA.webp);
     position: relative;
     background-repeat: no-repeat;
-    background-position: top;
-    height: 23rem;
+    background-position-y: 4rem;
+    height: 26rem;
     background-attachment: fixed;
     background-size: 100%;
-    margin-top: 2.4rem;
-}
-.panel__boton {
-  padding: 1rem;
-  font-size: 1rem;
-  width: 25%;
-}
-.productos {
-  display: flex;
-  justify-content: center;
-  margin: 20px;
-  transform: scale(1);
-  animation: productos 2s;
-  animation-play-state: var(--stop);
+    margin-top: 5.4rem;
+  }
+  .redes__sociales {
+    gap: 0px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .redes__sociales a {
+    font-size: 16px;
+  }
+  .redes__sociales a i {
+    font-size: 18px;
+  }
+  .vid__item {
+    object-fit: cover;
+    width: 82%;
+    height: 11rem;
+  }
+  .productos {
+    display: flex;
+    justify-content: center;
+    margin: 55px 20px 55px 20px;
+    transform: scale(1);
+    animation: productos 2s;
+    animation-play-state: var(--stop);
+    flex-direction: row;
+  }
+  .nombre_producto {
+    font-size: 20px;
 }
 }
 

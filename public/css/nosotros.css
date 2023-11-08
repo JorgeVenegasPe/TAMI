@@ -1,10 +1,7 @@
-
-
 figure {
   margin-right: 0;
   margin-left: 0;
 }
-
 .main__nosotros {
   background-color: var(--color-prymario);
 }
@@ -17,7 +14,6 @@ figure {
   padding: 2rem;
   animation: nosotros__texto 2s;
 }
-
 @keyframes nosotros__texto {
   from {
     transform: translate(-20%);
@@ -29,51 +25,43 @@ figure {
   font-size: var(--fontsize-titulo);
   animation: nosotros__titulo 2s;
 }
-
 @keyframes nosotros__titulo {
   from {
     transform: translate(100%, -20%);
   }
 }
-
 .nosotros__subtitulo {
   font-size: var(--fontsize-normal);
 }
-
 .nosotros__imagenes {
   overflow: hidden;
   padding: 1rem;
   background-color: var(--color-prymario);
 }
-
 @keyframes nosotros__mision {
   to {
     transform: translate(0);
     opacity: 1;
   }
 }
-
 .nosotros__vision {
   margin-top: 2rem;
   opacity: 0;
   transform: translate(50%);
   animation: nosotros__vision 2s 2.5s forwards;
 }
-
 @keyframes nosotros__vision {
   to {
     transform: translate(0);
     opacity: 1;
   }
 }
-
 .nosotros__img {
   width: 80%;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
-
 /* valores*/
 .valores {
   display: flex;
@@ -81,20 +69,17 @@ figure {
   text-align: center;
   background-color: white;
 }
-
 .valores__header {
   order: 2;
   display: flex;
   align-items: center;
   margin: 0;
 }
-
 .valores__img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-
 .valores__iconos {
   width: 50%;
   margin-right: auto;
@@ -110,36 +95,30 @@ figure {
   color: var(--color-prymario);
   font-size: var(--fontsize-titulo);
 }
-
 .valores__titulo {
   font-size: var(--fontsize-titulo);
   color: var(--color-botones);
   margin-left: auto;
   margin-right: auto;
 }
-
 .valores__figcaption {
   width: 100%;
 }
-
 .valores__descripcion {
   display: block;
   color: var(--color-botones);
   font-size: 1.3rem;
 }
-
 .certificaciones {
   padding: 3rem;
   background-color: var(--color-botones);
 }
-
 .certificaciones__amimacion {
   background-color: var(--color-botones);
   text-align: center;
   animation: certificaciones__amimacion 4s;
   animation-play-state: var(--stop1);
 }
-
 .certificaciones__titulo {
   color: white;
   width: 100%;
@@ -148,43 +127,64 @@ figure {
   animation: certificaciones__titulo 3s;
   animation-play-state: var(--stop3);
 }
-
-
-
 p.nosotros__descripcion{
   font-weight: 400;
   margin-bottom: 20px;
 }
-
-
 .main__nosotros {
     background-color: var(--color-prymario);
     margin-top: 14%;
 }
-
 .certificaciones__imagenes {
   margin-top: 1.5rem;
 }
-
 .certificaciones__img {
   padding: 20px;
   background-color: white;
   border-radius: 20px;
   width: 30%;
 }
-
 .certificaciones__texto {
   font-size: var(--fontsize-small);
   margin-top: 1rem;
   color: white;
 }
 
-
-
-
 @media screen and (max-width: 430px) {
+  .main__nosotros {
+    background-color: var(--color-prymario);
+    margin-top: 14%;
+    width: 140%;
+  }
+}
+@media screen and (max-width: 480px) {
   p.nosotros__descripcion{
     font-family: 'poppins', sans-serif;
+  }
+  .valores__iconos {
+    width: 43%;
+    margin-right: auto;
+    margin-left: auto;
+    animation: valores__iconos 2s;
+    animation-play-state: var(--stop);
+    padding-bottom: 1rem;
+  }
+  .nosotros__img {
+    width: 105%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .nosotros__imagenes {
+    display: flex;
+    overflow: hidden;
+    padding: 1rem;
+    background-color: var(--color-prymario);
+  }
+  .certificaciones__texto {
+    font-size: 0.98rem;
+    margin-top: 1rem;
+    color: white;
   }
 }
 @media screen and (min-width: 820px) {
@@ -356,7 +356,6 @@ p.nosotros__descripcion{
   font-size: var(--fontsize-small);
 }
 }
-
 @media screen and (min-width: 1200px) {
   .nosotros__texto {
     margin-left: 9.8rem;
@@ -377,12 +376,16 @@ p.nosotros__descripcion{
     padding: 0 5rem;
     font-size: var(--fontsize-small);
     gap: 10px;
+  }
+  .valores__iconos {
+    flex: 1;
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
-.valores__iconos {
-  flex: 1;
-  width: 30%;
-  display: flex;
-  flex-wrap: wrap;
+@media screen and (min-width: 1647px) {
+  .main__nosotros {
+    margin-top: -3rem;
+  }
 }
-}
-
