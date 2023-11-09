@@ -153,11 +153,27 @@ p.nosotros__descripcion{
 @media screen and (max-width: 430px) {
   .main__nosotros {
     background-color: var(--color-prymario);
-    margin-top: 14%;
+    margin-top: 17%;
     width: 140%;
   }
+  .valores__imagenes{
+    display: flex;
+    gap: 3.5rem;
+    flex-direction: column;
+    margin: 40px -10px 40px -10px;
+  }
+
+}
+@media screen and (max-width: 780px) {
+  .main__nosotros {
+    margin-top: 10%;
+  } 
 }
 @media screen and (max-width: 480px) {
+  .main__nosotros {
+    background-color: var(--color-prymario);
+    margin-top: 16%;
+  }
   p.nosotros__descripcion{
     font-family: 'poppins', sans-serif;
   }
@@ -186,17 +202,43 @@ p.nosotros__descripcion{
     margin-top: 1rem;
     color: white;
   }
+  .valores__imagenes{
+    display: flex;
+    gap: 3.5rem;
+    flex-direction: column;
+    margin: 40px -10px 40px -10px;
+  }
 }
+
 @media screen and (min-width: 820px) {
+  .main__nosotros {
+    background-color: var(--color-prymario);
+    margin-top: -0.6rem;
+}
 .nosotros {
   margin: 1rem;
   background-color: var(--color-prymario);
-  margin-top: 11%;
+  margin-top: 18%;
 }
+.valores__imagenes{
+  display: flex;
+  gap: 3.5rem;
+  flex-direction: column;
+  margin: 40px -10px 40px -10px;
+}
+.valores__iconos {
+  width: 30%;
+  margin-right: auto;
+  margin-left: auto;
+  animation: valores__iconos 2s;
+  animation-play-state: var(--stop);
+  padding-bottom: 1rem;
+}
+
 }
 @media screen and (min-width: 830px) {
   .main__nosotros {
-    margin-top: 5.4rem;
+    margin-top: -4.6rem;
   }
   .menu__item:nth-child(2) {
     background-color: var(--color-primario1);
@@ -224,7 +266,6 @@ p.nosotros__descripcion{
     width: 412px;
     height: 264px;
   }
-
   .valores {
     display: flex;
     flex-direction: row;
@@ -240,6 +281,8 @@ p.nosotros__descripcion{
     align-items: baseline;
     padding: 0 3rem;
     font-size: var(--fontsize-small);
+    flex-direction: inherit;
+    margin: 0px;
   }
   .valores__imagen {
     width: 32%;
@@ -361,7 +404,7 @@ p.nosotros__descripcion{
     margin-left: 9.8rem;
   }
   .valores__imagenes {
-    padding: 0 2rem;
+    padding: 0 12rem;
   }
   .valores__descripcion {
     font-size: 1rem;
