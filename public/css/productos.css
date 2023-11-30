@@ -376,6 +376,52 @@ h2 {
     transform: translateY(-20px);
   }
 }
+.modal-question {
+  background-color: #009E9D;
+  padding: 20px 20px;
+  border-radius: 8px;
+  max-width: 25rem;
+  min-width: 25rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  overflow-y: auto;
+}
+.question {
+  width: 100%;
+  padding: 0.5rem 1.6rem;
+  max-height: 380px;
+  height: auto;
+}
+
+.question h1 {
+  text-align: center;
+  margin: 0px 0px 30px 0px;
+}
+
+.question div {
+  margin: 1rem 0rem;
+}
+
+/* Para WebKit (Chrome y Safari) */
+.modal-question::-webkit-scrollbar {
+  width: 7px;
+}
+
+.modal-question::-webkit-scrollbar-thumb {
+  background-color: #4b4646;
+  border-radius: 10px;
+}
+
+/* Para Firefox */
+
+
+
 /* Estilo para el responsive */
 @media screen and (max-width: 450px) {
   .productos__imagenes {
@@ -396,10 +442,13 @@ h2 {
   .main__productos {
     background-color: rgb(177, 228, 228);
     padding: 0.1px;
-    width: 140%;
+    width: 100%;
     margin-top: 5rem;
 }
-
+.modal-question {   
+  max-width: 24rem;
+  min-width: 24rem;  
+}
 }
 @media screen and (max-width: 500px) {
   .main__productos {
@@ -471,6 +520,10 @@ h2 {
   .custom-table, .custom-table tr, .custom-table td {
     font-size: 0.7rem;
   }
+  /* .modal-question {   
+    max-width: 30rem;
+    min-width: 30rem;  
+  } */
 }
 @media screen and (max-width: 680px) {
   .main__productos {
@@ -488,10 +541,24 @@ h2 {
   .productos__imagenes {
     font-size: var(--fontsize-normal);
   }
+  .modal-question {   
+    max-width: 36rem;
+    min-width: 36rem;  
+  }
+  .question {
+    max-height: 380px;
+  }
 }
 @media screen and (min-width: 815px) {
   .productos__img {
     height: 85%;
+  }
+  .modal-question {   
+    max-width: 52rem;
+    min-width: 52rem;  
+  }
+  .question {
+    max-height: 490px;
   }
 }
 @media screen and (min-width: 990px) {

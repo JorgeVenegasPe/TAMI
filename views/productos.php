@@ -371,8 +371,9 @@
                                             <div class="detalles-subcont">
                                                 <label>Mayor Información: </label>
                                                 <br>
-                                                    <button class="btn-contactar">Contactar</button>
-                                                    <button class="btn-faq">FAQ</button>                                            
+                                                    <button class="btn-contactar">Contactar</button>                                                   
+                                                    <button class="btn-faq" onclick="openFAQModal()">FAQ</button>
+
                                             </div>
                                         </div>
                                         <div class="calc-container">
@@ -454,6 +455,67 @@
                     }
                     return starsHTML;
                     }
+
+                    function openFAQModal() {
+                        // Crear la ventana modal de FAQ
+                        const faqModal = document.createElement("div");
+                        faqModal.classList.add("modal", "faq-modal");
+                        faqModal.innerHTML = `
+                            <div class="modal-question">
+                                <span class="close" onclick="closeFAQModal()">x</span>
+                                <div class="question">
+                                    <h1> PREGUNTAS FRECUENTES</h1>
+                                    <div>
+                                        <h3>P1:¿Son una fábrica o una empresa comercial?</h3>
+                                        <p>Somos una empresa comercial</p>
+                                    </div>
+                                    
+                                    <div>
+                                        <h3>P2:¿Cómo controlan la calidad?</h3>
+                                        <p>Siempre testeamos los productos para garantizar el correcto funcionamiento y la seguridad de nuestros clientes.</p>
+                                    </div>
+                                    <div>
+                                        <h3>P3:¿Por qué elegirnos?</h3>
+                                        <ul>   
+                                            <li>Coordinamos un asesoramiento personalizado para que haga un uso correcto del producto</li>
+                                            <li>Ofrecemos un precio competitivo acorde al mercado.</li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div>
+                                        <h3>P4:¿Hay ofertas en precios productos?</h3>
+                                        <p>El precio dependiendo del producto ya tiene un descuento de entre 35% a un 40%</p>
+                                    </div>
+
+                                    <div>
+                                        <h3>P5:¿Cómo hago el pago o coordino mis compras?</h3>
+                                        <p>La cotizaciones se harán a través de WhatsApp con el único número de nuestra marca +51 978 883 199</p>
+                                    </div>
+                                </div>                                
+                            </div>
+                        `;
+
+                        // Agregar la ventana modal de FAQ al contenedor de modales existente
+                        document.getElementById("modalContainer").appendChild(faqModal);
+
+                        // Mostrar la ventana modal de FAQ
+                        faqModal.style.display = "block";
+                        faqModal.classList.add("show");
+                    }
+                    function closeFAQModal() {
+                        // Obtener la ventana modal de FAQ por su clase específica
+                        const faqModal = document.querySelector(".modal.faq-modal");
+
+                        // Ocultar y quitar la clase "show" de la ventana modal de FAQ
+                        if (faqModal) {
+                            faqModal.style.display = "none";
+                            faqModal.classList.remove("show");
+
+                            // Remover la ventana modal de FAQ del DOM después de cerrarla
+                            faqModal.parentNode.removeChild(faqModal);
+                        }
+                    }
+
                 </script>
         </section>
 

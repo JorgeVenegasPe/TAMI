@@ -154,7 +154,7 @@ p.nosotros__descripcion{
   .main__nosotros {
     background-color: var(--color-prymario);
     margin-top: 17%;
-    width: 140%;
+    width: 100%;
   }
   .valores__imagenes{
     display: flex;

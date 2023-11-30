@@ -124,7 +124,7 @@ figure {
   .main__politicaEnvio {
     background-color: rgb(236, 251, 251);
     margin-top: 5rem;
-    width: 140%;
+    width: 100%;
 }
 }
 @media screen and (min-width: 440px) {

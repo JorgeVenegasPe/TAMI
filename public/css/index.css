@@ -177,7 +177,7 @@
 
 @media screen and (min-width: 300px) {
   .main__inicio {
-    width: 140%;
+    width: 100%;
 }
   .productos__img {
     width: 30%;
@@ -214,8 +214,7 @@
   position: relative;
   background-repeat: no-repeat;
   background-position: top;
-  height: 13rem;
-  background-attachment: fixed;
+  height: 15rem;
   background-size: 100%;
   margin-top: 4.4rem;
 }
@@ -223,16 +222,13 @@
   filter: opacity(0);
   animation: panel 2s 1 forwards;
   text-align: center;
-  background-color: var(--color-botones);
-  color: white;
-  width: 8rem;
   padding: 1rem;
   position: absolute;
   bottom: 4rem;
   right: 50%;
   transform: translate(50%);
   font-size: 0.8rem;
-  width: 30%;
+  width: 38%;
   border-radius: 20px;
   transition: background-color 1s;
 }
@@ -439,7 +435,6 @@
 }
 
 }
-
 
 @media screen and (min-width: 768px) {
   .panel__boton {    
