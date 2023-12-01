@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="text/css" href="../public/css/footer.css">
     <link rel="stylesheet" type="text/css" href="../public/css/productos.css">
     <link rel="stylesheet" type="text/css" href="../public/css/formulario.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 </head>
 
 <body>
@@ -403,7 +404,7 @@
                             <div class="modal-form-content">
                                 <span class="close" onclick="closeModalForm('${producto.id}')">x</span>
                                 <label class="titleform">Cotizar ${producto.title}</label>
-                                <form>
+                                <form id="miFormulario" action="mensajewssp.php" method="POST">
                                 <div class="form-row">
                                       <div class="form-column">
                                         <label>Nombre:</label>
@@ -457,11 +458,6 @@
                 </script>
         </section>
 
-
-
-
-
-        
     </main>
     <?php include_once "footer.php"; ?>
     <script type="application/javascript" src="../public/js/main.js" async></script>
@@ -495,11 +491,13 @@
         enviarButton();
 
     }
-    function closeModalForm(id){
-        var modalForm = document.getElementById(id + "_modalForm");
+    function closeModalForm(id) {
+    var modalForm = document.getElementById(id + "_modalForm");
+    if (modalForm) {  // Verificar si el elemento existe antes de operar sobre él
         modalForm.style.display = "none";
         modalForm.classList.remove("show");
     }
+}
 
     function setUpCounter() {
         const modal = document.querySelector('.modal.show');  
@@ -575,7 +573,7 @@ window.addEventListener('DOMContentLoaded', function() {
 });
 
 // Función para enviar el mensaje de WhatsApp
-function enviarButton(){  // Obtener valores del formulario
+/*function enviarButton(){  // Obtener valores del formulario
     const modalForm = document.querySelector('.modalForm.show');  
         if(!modalForm) {
           console.log('No se encontró el modal');
@@ -583,7 +581,7 @@ function enviarButton(){  // Obtener valores del formulario
     const enviarCompra = modalForm.querySelector("#enviarCompra");
 
     enviarCompra.addEventListener("click", function () {
-        const numero = modalForm.querySelector("#telefono").value;
+        const numero = "+51995669450";
         const nombre = modalForm.querySelector("#nombre").value;
         const email = modalForm.querySelector("#email").value;
         const mensaje = modalForm.querySelector("#mensaje").value;
@@ -593,12 +591,58 @@ function enviarButton(){  // Obtener valores del formulario
         const mensajeCodificado = encodeURIComponent(texto);
         const urlWhatsApp = `https://wa.me/${numero}?text=${mensajeCodificado}`;
 
-       // Abrir en nueva pestaña
+       // en una nueva pesataña, abrir la url de whatsapp con el mensaje del usuario al vendedor
        window.open(urlWhatsApp, '_blank');
-        console.log(numero);
         console.log("se abrio la ventana");
+});
+}*/
+
+function enviarButton() {
+    const modalForm = document.querySelector('.modalForm.show');  
+        if(!modalForm) {
+          console.log('No se encontró el modal');
+        }
+    const enviarCompra = modalForm.querySelector("#enviarCompra");
+
+    enviarCompra.addEventListener("click", function () {
+    // Obtener valores del formulario
+    const numero = "+51995669450";
+    const nombre = modalForm.querySelector("#nombre").value;
+    const email = modalForm.querySelector("#email").value;
+    const mensaje = modalForm.querySelector("#mensaje").value;
+    const producto = modalForm.querySelector("#producto").value;
+    const cantidad = modalForm.querySelector("#cantidad").value;
+    const telefono = modalForm.querySelector("#telefono").value;
+    //wssp del usuario
+    const texto = `Hola, mi nombre es ${nombre}, mi correo es ${email} y mi mensaje es: ${mensaje}. El producto solicitado es ${producto} y la cantidad es ${cantidad}`;
+    const mensajeCodificado = encodeURIComponent(texto);
+    const urlWhatsApp = `https://wa.me/${numero}?text=${mensajeCodificado}`;
+
+    // en una nueva pesataña, abrir la url de whatsapp con el mensaje del usuario al vendedor
+    window.open(urlWhatsApp, '_blank');
+    console.log("se abrio la ventana");
+    
+    //enviar datos al php
+    $.ajax({
+        url: "mensajewssp.php",
+        type: "POST",
+        data: {
+            nombre: nombre,
+            email: email,
+            telefono: telefono,
+            producto: producto,
+            cantidad: cantidad,
+            mensaje: mensaje
+        },
+        success: function (response) {
+            console.log(response);
+        },
     });
+
+
+});
 }
 
 
 </script>
+</body>
